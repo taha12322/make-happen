@@ -1,3 +1,21 @@
-.test {
-    background: blue;
+@import '../colors.scss';
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.article-banner {
+    position: relative;
+    .article-breadcrumb {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        bottom: 0;
+        .breadcrumb-item {
+            color: $white;
+            a {
+                color: $yellow;
+            }
+        }
+    }
 }

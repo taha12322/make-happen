@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AACA,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,eAAe,CAAC;EACZ,QAAQ,EAAE,QAAQ;CAYrB;;AAbD,AAEI,eAFW,CAEX,mBAAmB,CAAC;EAChB,gBAAgB,EAAE,kBAAkB;EACpC,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,CAAC;CAOZ;;AAZL,AAMQ,eANO,CAEX,mBAAmB,CAIf,gBAAgB,CAAC;EACb,KAAK,ECdV,OAAO;CDkBL;;AAXT,AAQY,eARG,CAEX,mBAAmB,CAIf,gBAAgB,CAEZ,CAAC,CAAC;EACE,KAAK,ECfb,OAAO;CDgBF",
     "sources": [
-        "../scss/article-detail/article-details.scss"
+        "../scss/article-detail/article-details.scss",
+        "../scss/colors.scss"
     ],
     "names": [],
     "file": "article-details.css"

@@ -1,1 +1,24 @@
-/* No CSS *//*# sourceMappingURL=article-details.css.map */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.article-banner {
+  position: relative;
+}
+
+.article-banner .article-breadcrumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: 0;
+}
+
+.article-banner .article-breadcrumb .breadcrumb-item {
+  color: #ffffff;
+}
+
+.article-banner .article-breadcrumb .breadcrumb-item a {
+  color: #ffb51f;
+}
+/*# sourceMappingURL=article-details.css.map */
