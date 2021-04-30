@@ -5,35 +5,8 @@ body {
     padding: 0;
 }
 
-.header {
-    background-color: #000;
-    width           : 100%;
-    height          : 70px;
-    align-items     : center;
+@import "header";
 
-}
-
-.contaner {
-    margin : 0;
-    padding: 25px 0;
-    display: flex;
-
-    li {
-        list-style: none;
-        margin    : 0 15px;
-    }
-
-    a {
-        color          : #fff;
-        text-decoration: none;
-
-        &:hover {
-            padding-bottom: 21px;
-            border-bottom : $yellow solid 4px;
-            border-radius : 3px;
-        }
-    }
-}
 
 /* slider -------------------------------------------- */
 
@@ -274,17 +247,4 @@ body {
 
 /* footer */
 
-.boxb {
-    background-color: #000;
-    width           : 100%;
-    height          : 400px;
-}
-
-.footer-items {
-    list-style: none;
-}
-
-.footer-items a {
-    text-decoration: none;
-    color          : #fff;
-}
+@import "footer";
