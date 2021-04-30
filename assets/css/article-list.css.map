@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/article-list/article-list.scss"
+    ],
+    "names": [],
+    "file": "article-list.css"
+}

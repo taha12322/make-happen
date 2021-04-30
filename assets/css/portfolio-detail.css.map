@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/portfolio-detail/portfolio-detail.scss"
+    ],
+    "names": [],
+    "file": "portfolio-detail.css"
+}

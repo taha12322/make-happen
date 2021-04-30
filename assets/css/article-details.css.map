@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/article-detail/article-details.scss"
+    ],
+    "names": [],
+    "file": "article-details.css"
+}
