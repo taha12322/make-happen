@@ -1,0 +1,35 @@
+/* footer */
+
+.boxb {
+    background-color: #000;
+    width           : 100%;
+
+}
+
+ul {
+    padding-left : 0;
+    margin-bottom: 0;
+}
+
+.footer-items {
+    list-style: none;
+}
+
+footer {
+    li {
+        padding-bottom: 5px;
+    }
+}
+
+.footer-items a {
+    text-decoration: none;
+    color          : #fff;
+
+
+}
+
+.sub {
+    font-weight : lighter;
+    padding-left: 7px;
+    color       : $grey;
+}
