@@ -13,3 +13,12 @@
         margin-bottom : 0;
     }
 }
+
+%rectangle {
+    width           : 70px;
+    height          : 3px;
+    background-color: $yellow;
+    position        : absolute;
+    right           : 48%;
+    margin: 1rem 0;
+}
