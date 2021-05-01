@@ -61,13 +61,13 @@ footer li {
   color: #818a91;
 }
 
-.copy-right {
+.nav_footer {
   background-color: #ffb51f;
   height: 49.5px;
   width: 100%;
 }
 
-.copy-right p {
+.nav_footer p {
   font-family: Roboto;
   font-size: 14px;
   text-align: center;
@@ -140,13 +140,5 @@ body {
   font-weight: 600;
   font-size: 20px;
   border-radius: 2px;
-}
-
-.nav_footer {
-  padding-top: 1rem;
-  width: 100%;
-  height: 50px;
-  background-color: #ffb51f;
-  color: #ffffff;
 }
 /*# sourceMappingURL=404.css.map */

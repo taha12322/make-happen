@@ -2,12 +2,16 @@
   background-color: #000;
   width: 100%;
   height: 70px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contaner {
   margin: 0;
   padding: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -27,22 +31,6 @@
   border-radius: 3px;
 }
 
-.copy-right {
-  background-color: #ffb51f;
-  height: 49.5px;
-  width: 100%;
-}
-
-.copy-right p {
-  font-family: Roboto;
-  font-size: 14px;
-  text-align: center;
-  letter-spacing: 0.7px;
-  color: #ffffff;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 body {
   width: 100%;
   height: 100%;
@@ -54,8 +42,12 @@ body {
   background-image: url(../../assets/img/sign_up_in/bg_sign_in.png);
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sign-up-container .container {
@@ -103,7 +95,8 @@ body {
   max-width: 350px;
   margin: auto;
   padding: 30px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
 }
 
@@ -123,9 +116,16 @@ body {
 }
 
 .sign-up-container .container .row .form .wrap form .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   margin-bottom: 15px;
 }
 
