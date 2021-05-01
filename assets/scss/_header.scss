@@ -1,0 +1,29 @@
+.header {
+    background-color: #000;
+    width           : 100%;
+    height          : 70px;
+    align-items     : center;
+
+}
+
+.contaner {
+    margin : 0;
+    padding: 25px 0;
+    display: flex;
+
+    li {
+        list-style: none;
+        margin    : 0 15px;
+    }
+
+    a {
+        color          : #fff;
+        text-decoration: none;
+
+        &:hover {
+            padding-bottom: 21px;
+            border-bottom : $yellow solid 4px;
+            border-radius : 3px;
+        }
+    }
+}
