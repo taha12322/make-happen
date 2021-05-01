@@ -26,4 +26,207 @@
   border-bottom: #ffb51f solid 4px;
   border-radius: 3px;
 }
+
+.copy-right {
+  background-color: #ffb51f;
+  height: 49.5px;
+  width: 100%;
+}
+
+.copy-right p {
+  font-family: Roboto;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.sign-up-container {
+  min-height: calc(100vh - 119.5px);
+  width: 100%;
+  background-image: url(../../assets/img/sign_up_in/bg_sign_in.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.sign-up-container .container {
+  height: 100%;
+  width: 80%;
+}
+
+.sign-up-container .container .row {
+  height: 100%;
+}
+
+.sign-up-container .container .row .title {
+  min-height: 180px;
+}
+
+.sign-up-container .container .row .title h1 {
+  font-family: SourceSansPro;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.33;
+  color: #ffffff;
+}
+
+.sign-up-container .container .row .title .line {
+  width: 10%;
+  height: 6px;
+  background-color: #ffb51f;
+  margin-bottom: 20px;
+}
+
+.sign-up-container .container .row .title h3 {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.sign-up-container .container .row .form {
+  margin: 30px auto;
+}
+
+.sign-up-container .container .row .form .wrap {
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  padding: 30px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+}
+
+.sign-up-container .container .row .form .wrap form h1 {
+  font-family: SourceSansPro;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.33;
+  color: #0d0908;
+}
+
+.sign-up-container .container .row .form .wrap form .line {
+  width: 15%;
+  height: 6px;
+  background-color: #ffb51f;
+  margin-bottom: 20px;
+}
+
+.sign-up-container .container .row .form .wrap form .group {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-bottom: 15px;
+}
+
+.sign-up-container .container .row .form .wrap form .group label {
+  font-family: SourceSansPro;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #373a3c;
+}
+
+.sign-up-container .container .row .form .wrap form .group input[type=email] {
+  padding: 13px;
+  border: solid 1px #dddddd;
+  color: #818a91;
+  font-size: 16px;
+}
+
+.sign-up-container .container .row .form .wrap form .group input[type=password] {
+  padding: 13px;
+  border: solid 1px #dddddd;
+  color: #818a91;
+  font-size: 16px;
+}
+
+.sign-up-container .container .row .form .wrap form .group input[type=text] {
+  padding: 13px;
+  border: solid 1px #dddddd;
+  color: #818a91;
+  font-size: 16px;
+}
+
+.sign-up-container .container .row .form .wrap form .checkbox label {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.8px;
+  color: #373a3c;
+  margin-bottom: 15px;
+}
+
+.sign-up-container .container .row .form .wrap form .forget {
+  margin-bottom: 31px;
+  font-family: Roboto;
+  font-size: 8px;
+  line-height: 1.25;
+  letter-spacing: 0.36px;
+  text-align: left;
+  color: #818a91;
+}
+
+.sign-up-container .container .row .form .wrap form .forget a {
+  color: #ffb51f;
+}
+
+.sign-up-container .container .row .form .wrap form div .btn {
+  width: 143px;
+  height: 53px;
+  margin-bottom: 30px;
+  padding: 15px 33px 14px;
+  border: solid 1px #ffb51f;
+  background-color: #ffb51f;
+  font-family: Roboto;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  color: #ffffff;
+  line-height: 1.25;
+}
+
+.sign-up-container .container .row .form .wrap form div p {
+  margin-bottom: 20px;
+  font-family: SourceSansPro;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.31;
+  color: #0d0908;
+}
+
+.sign-up-container .container .row .form .wrap form div div {
+  margin-bottom: 22px;
+  width: 70%;
+}
+
+.sign-up-container .container .row .form .wrap form .any {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.63px;
+  text-align: left;
+  color: #818a91;
+}
+
+.sign-up-container .container .row .form .wrap form .any a {
+  color: #ffb51f;
+}
+
+@media screen and (max-width: 786px) {
+  .sign-up-container .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .sign-up-container .container {
+    width: 95%;
+  }
+}
 /*# sourceMappingURL=login.css.map */
