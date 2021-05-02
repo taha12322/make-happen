@@ -3,6 +3,10 @@
 
 @import "../copyRight";
 
+.copy-right {
+    @extend %copy-right;
+}
+
 .sign-up-container {
     min-height       : calc(100vh - 119.5px);
     width            : 100%;
