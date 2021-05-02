@@ -3,34 +3,23 @@
 @import "../footer";
 @import "../slider";
 @import "../copyRight";
+@import "../banner";
+@import "../shaps";
+
 
 * {
     padding: 0;
     margin : 0;
 }
 
-/* section2  */
 
-.title {
-    font-weight: 800;
-    margin     : 0;
-    padding    : 20px 0;
-    color      : #000;
-    text-align : center;
+
+.rectangle1 {
+    @extend %rectangle1;
+
+
 }
 
-.rectangle {
-    width           : 70px;
-    height          : 6px;
-    background-color: $yellow;
-    position        : absolute;
-    right           : 48%;
-}
-
-.text-dis {
-    line-height: 1.5rem;
-    text-align : center;
-}
 
 .copy-right {
     @extend %copy-right;
