@@ -7,36 +7,16 @@
     margin          : 1rem 0;
 }
 
-%rectangle1 {
+%rectangle-l {
     width           : 70px;
     height          : 3px;
     background-color: $yellow;
     margin          : auto;
-    margin-bottom   : 10px;
-    margin-top      : 10px;
-
 }
 
 @media screen and (max-width : 767px) {
-    %rectangle1 {
-        height             : 70px;
-        width              : 3px;
-        background-color   : $yellow;
-        margin             : auto;
-        // margin-bottom   : 10px;
-        // margin-top      : 10px;
-
-    }
-}
-
-@media screen and (max-width : 575px) {
-    %rectangle1 {
-        width              : 70px;
-        height             : 3px;
-        background-color   : $yellow;
-        margin             : auto;
-        // margin-bottom   : 10px;
-        // margin-top      : 10px;
-
+    %rectangle-l {
+        height: 70px;
+        width : 3px;
     }
 }
