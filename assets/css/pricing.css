@@ -213,6 +213,24 @@ footer li {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .rectangle1 {
+    height: 70px;
+    width: 3px;
+    background-color: #ffb51f;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .rectangle1 {
+    width: 70px;
+    height: 3px;
+    background-color: #ffb51f;
+    margin: auto;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
