@@ -14,11 +14,62 @@
 
 
 
-.rectangle-l {
-    @extend %rectangle-l;
+.rectangle-r {
+    @extend %rectangle-r;
 
 
 }
+
+
+.owl-carousel .nav-btn {
+    height  : 47px;
+    position: absolute;
+    width   : 26px;
+    cursor  : pointer;
+    top     : 40% !important;
+    border  : 3px solid red;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+    pointer-events: none;
+    opacity       : 0.2;
+}
+
+.owl-carousel .prev-slide {
+    background: url(../../img/pricing/arrow-right.png) no-repeat scroll 0 0;
+    left      : -53px;
+}
+
+.owl-carousel .next-slide {
+    background: url(../../img/pricing/arrow-right.png) no-repeat scroll -24px 0px;
+    right     : -53px;
+}
+
+.owl-carousel .prev-slide:hover {
+    background-position: 0px -53px;
+}
+
+.owl-carousel .next-slide:hover {
+    background-position: -24px -53px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width     : 20px;
+    height    : 3px;
+    margin    : 5px 7px;
+    background: #D6D6D6;
+
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: $yellow;
+}
+
+.carousel-img {}
+
+
 
 
 .copy-right {
