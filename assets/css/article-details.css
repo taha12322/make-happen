@@ -73,4 +73,48 @@ hr {
   width: 60%;
   margin: auto;
 }
+
+.get-inspired .other-articles {
+  display: flex;
+  justify-content: center;
+}
+
+.get-inspired .other-articles .card {
+  padding: 0;
+  border: none;
+}
+
+.get-inspired .other-articles .card .col-md-3 {
+  width: 23%;
+}
+
+.get-inspired .other-articles .card .card-body span {
+  border: 1px solid #ffb51f;
+  padding: 7px 13px;
+  border-radius: 30px;
+  font-size: 10px;
+  color: #ffb51f;
+}
+
+.yellow-border {
+  border: 1px solid #ffb51f;
+}
+
+.comments-count {
+  width: 60%;
+  margin: auto;
+}
+
+.article-comments {
+  width: 60%;
+  margin: auto;
+}
+
+.article-comments .publish-date {
+  color: #818a91;
+}
+
+.article-comments .comments-btn button {
+  width: auto;
+}
 /*# sourceMappingURL=article-details.css.map */

@@ -71,3 +71,44 @@ hr {
     width: 60%;
     margin: auto;
 }
+
+.get-inspired {
+    .other-articles {
+        display: flex;
+        justify-content: center;
+        .card {
+            padding: 0;
+            border: none;
+            .col-md-3 {
+                width: 23%;
+            }
+            .card-body span {
+                border: 1px solid $yellow;
+                padding: 7px 13px;
+                border-radius: 30px;
+                font-size: 10px;
+                color: $yellow;
+            }
+        }
+    }
+}
+
+.yellow-border {
+    border: 1px solid $yellow;
+}
+
+.comments-count {
+    width: 60%;
+    margin: auto;
+}
+
+.article-comments {
+    width: 60%;
+    margin: auto;
+    .publish-date {
+        color: $grey;
+    }
+    .comments-btn button {
+        width: auto;
+    }
+}
