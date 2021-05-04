@@ -7,6 +7,9 @@ body {
 
 .article-banner {
     position: relative;
+    background-image: url('../img/Article Detail/bg_Article_Detail.png');
+    height: 350px;
+    background-size: cover;
     .article-breadcrumb {
         background-color: rgba(0, 0, 0, 0.3);
         position: absolute;
@@ -19,12 +22,52 @@ body {
         }
     }
 }
-.author-detail{
-.article-category{
-   p span{
-        border:1px solid $yellow;
-         padding: 7px 13px;
-  border-radius: 30px;
+
+.author-detail {
+    margin: auto;
+    width: 60%;
+    .article-name h3 {
+        font-size: 43px;
+    }
+    .author-name span {
+        color: $yellow;
+    }
+    .article-category {
+        p span {
+            border: 1px solid $yellow;
+            padding: 7px 13px;
+            border-radius: 30px;
+            font-size: 10px;
+            color: $yellow;
+        }
     }
 }
+
+.article-text {
+    margin: auto;
+    width: 60%;
+    p {
+        text-align: justify;
+    }
+}
+
+.line-separator {
+    background-color: $yellow;
+    height: 5px;
+    width: 40px;
+    margin: auto;
+}
+
+.share-article {
+    .socialmedia img {
+        width: 60px;
+    }
+}
+
+hr {
+    height: 2px!important;
+    background-color: $yellow;
+    border: none;
+    width: 60%;
+    margin: auto;
 }
