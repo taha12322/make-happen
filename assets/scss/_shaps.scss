@@ -4,5 +4,35 @@
     background-color: $yellow;
     position        : absolute;
     right           : 48%;
-    margin: 1rem 0;
+    margin          : 1rem 0;
+}
+
+%rectangle-r {
+    width           : 70px;
+    height          : 3px;
+    background-color: $yellow;
+    margin          : auto;
+}
+
+%rectangle-mini {
+    width           : 50px;
+    height          : 3px;
+    background-color: $yellow;
+    margin          : auto;
+}
+
+%line {
+    width           : 60%;
+    height          : 1px;
+    background-color: $yellow;
+    margin          : auto;
+    margin-top      : 40px;
+    margin-bottom   : 40px;
+}
+
+@media screen and (max-width : 767px) {
+    %rectangle-r {
+        height: 70px;
+        width : 3px;
+    }
 }

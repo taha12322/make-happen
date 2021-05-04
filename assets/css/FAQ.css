@@ -2,9 +2,29 @@
   background-color: #000;
   width: 100%;
   height: 70px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+u .item a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: transparent solid 4px;
+}
+
+.header nav .menu .item a:hover {
+  padding-bottom: 21px;
+  border-bottom: #ffb51f solid 4px;
+  border-radius: 3px;
+}
+
+.header nav .menu .item i {
+  color: #fff;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: 100px;
+  }
 }
 
 /* footer */
