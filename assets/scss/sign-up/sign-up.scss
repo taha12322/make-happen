@@ -1,6 +1,5 @@
 @import "../colors";
 @import "../header";
-
 @import "../copyRight";
 
 body {
@@ -8,9 +7,6 @@ body {
     height: 100%;
 }
 
-.copy-right {
-    @extend %copy-right;
-}
 
 .sign-up-container {
     min-height       : calc(100vh - 119.5px);
@@ -149,7 +145,6 @@ body {
                                 margin-bottom : 15px;
 
 
-                                input {}
                             }
                         }
 
@@ -198,10 +193,6 @@ body {
                                 margin-bottom: 22px;
                                 width        : 70%;
 
-                                a {
-                                    img {}
-
-                                }
                             }
 
                         }
@@ -233,6 +224,12 @@ body {
 
     }
 
+}
+
+
+// footer
+.copy_right {
+    @extend %copy_right
 }
 
 @media screen and (max-width : 786px) {

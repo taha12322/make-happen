@@ -4,7 +4,6 @@
   height: 70px;
 }
 
-
 .header nav .menu .item a {
   color: #fff;
   text-decoration: none;
@@ -28,13 +27,13 @@
   }
 }
 
-.copy-right {
+.copy_right {
   background-color: #ffb51f;
   height: 50px;
   width: 100%;
 }
 
-.copy-right p {
+.copy_right p {
   font-family: Roboto;
   font-size: 14px;
   text-align: center;
@@ -50,8 +49,12 @@
   background-image: url(../../assets/img/sign_up_in/bg_sign_in.png);
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sign-up-container .container {
@@ -100,7 +103,8 @@
   max-width: 350px;
   margin: auto;
   padding: 30px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
 }
 
@@ -120,9 +124,16 @@
 }
 
 .sign-up-container .container .row .form .wrap form .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   margin-bottom: 15px;
 }
 
@@ -217,6 +228,22 @@
 
 .sign-up-container .container .row .form .wrap form .any a {
   color: #ffb51f;
+}
+
+.copy_right {
+  background-color: #ffb51f;
+  height: 50px;
+  width: 100%;
+}
+
+.copy_right p {
+  font-family: Roboto;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 786px) {
