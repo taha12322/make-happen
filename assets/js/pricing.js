@@ -1,7 +1,7 @@
 $(document).ready(function () {
     //owl-carousel-1
     $('.owl-carousel').owlCarousel({
-        margin: 0,
+        margin: 8,
         autoplay: true,
         nav: true,
         navText: ["<span aria-label='Previous'>‹</span>", "<span aria-label='Next'>›</span>"],
@@ -31,7 +31,7 @@ $(document).ready(function () {
     })
     ///owl-carousel
     $('.owl-carousel').owlCarousel({
-        margin: 0,
+        margin: 8,
         autoplay: true,
         nav: true,
         navText: ["<span aria-label='Previous'>‹</span>", "<span aria-label='Next'>›</span>"],

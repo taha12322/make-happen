@@ -214,7 +214,7 @@ footer li {
 
 .line {
   width: 60%;
-  height: 1px;
+  height: 2px;
   background-color: #ffb51f;
   margin: auto;
   margin-top: 40px;
@@ -336,6 +336,39 @@ footer li {
   padding-left: 5px;
 }
 
+.card.testimony {
+  border: none;
+  border-bottom: 1px solid #ffb51f;
+  border-right: 1px solid #ffb51f;
+  border-left: 1px solid #ffb51f;
+}
+
+.card.testimony .card-header {
+  height: 50px;
+  background-color: #0d0908;
+  border: 1px #0d0908 solid;
+}
+
+.card.testimony .card-body {
+  height: 285px;
+}
+
+.card.testimony .card-body .card-title h2 {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.card.testimony .card-body .card-title h6 {
+  color: #ffb51f;
+  font-size: 12px;
+}
+
+.card.testimony .card-body .card-caption p {
+  font-size: 16px;
+  width: 70%;
+  margin: auto;
+}
+
 .owl-carousel .owl-item {
   display: flex;
   align-items: center;
@@ -367,6 +400,7 @@ footer li {
   height: 3px;
   margin: 5px 7px;
   background: #D6D6D6;
+  margin-top: 30px;
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
