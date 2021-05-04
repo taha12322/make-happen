@@ -6,18 +6,13 @@
 @import "../banner";
 @import "../shaps";
 
-
 * {
     padding: 0;
     margin : 0;
 }
 
-
-
 .rectangle-r {
     @extend %rectangle-r;
-
-
 }
 
 .rectangle-mini {
