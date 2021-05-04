@@ -7,30 +7,6 @@
           align-items: center;
 }
 
-.contaner {
-  margin: 0;
-  padding: 25px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contaner li {
-  list-style: none;
-  margin: 0 15px;
-}
-
-.contaner a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.contaner a:hover {
-  padding-bottom: 21px;
-  border-bottom: #ffb51f solid 4px;
-  border-radius: 3px;
-}
-
 /* footer */
 .boxb {
   background-color: #000;
