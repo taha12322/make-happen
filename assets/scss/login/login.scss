@@ -1,11 +1,7 @@
 @import "../colors";
 @import "../header";
-
 @import "../copyRight";
 
-.copy-right {
-    @extend %copy-right;
-}
 
 .sign-up-container {
     min-height       : calc(100vh - 119.5px);
@@ -16,7 +12,7 @@
     display          : flex;
     align-items      : center;
 
-    .container {
+.container {
         height: 100%;
         width : 80%;
 
@@ -229,6 +225,10 @@
 
     }
 
+}
+// footer
+.nav_footer{
+    @extend %copy-right;
 }
 
 @media screen and (max-width : 786px) {
