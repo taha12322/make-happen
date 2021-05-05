@@ -57,13 +57,13 @@ footer li {
   color: #818a91;
 }
 
-.nav_footer {
+.copy_right {
   background-color: #ffb51f;
   height: 50px;
   width: 100%;
 }
 
-.nav_footer p {
+.copy_right p {
   font-family: Roboto;
   font-size: 14px;
   text-align: center;
@@ -71,6 +71,15 @@ footer li {
   color: #ffffff;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.join-nav .rectangle {
+  width: 5%;
+  height: 5px;
+  background-color: #ffffff;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 * {
@@ -209,6 +218,53 @@ footer li {
 
 .map img {
   width: 100%;
+}
+
+.join-nav {
+  background-color: #ffb51f;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.join-nav label {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-right: 23rem;
+}
+
+.join-nav .input {
+  width: 445px;
+  height: 53px;
+  padding-left: 1.25rem;
+  border-radius: 3px;
+  background-color: #ffb51f;
+  border: solid 1px #ffffff;
+  color: #ffffff;
+}
+
+.join-nav .input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.join-nav .input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.join-nav .input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.join-nav .input::placeholder {
+  color: #ffffff;
+}
+
+.join-nav .submit-button {
+  width: 119px;
+  height: 53px;
+  background-color: #0d0908;
+  color: #ffffff;
+  border-radius: 3px;
 }
 
 @media only screen and (max-width: 1024px) {

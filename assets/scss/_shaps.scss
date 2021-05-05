@@ -30,6 +30,15 @@
     margin-bottom   : 40px;
 }
 
+%rectangle-mini-w {
+    width           : 5%;
+    height          : 5px;
+    background-color: $white;
+    margin          : auto;
+    margin-top      : 40px;
+    margin-bottom   : 40px;
+}
+
 @media screen and (max-width : 767px) {
     %rectangle-r {
         height: 70px;

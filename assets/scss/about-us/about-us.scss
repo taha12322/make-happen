@@ -11,6 +11,9 @@
     padding: 0;
 }
 
+
+
+
 .img-nav{
     position: relative;
     nav{
@@ -147,15 +150,42 @@
     }
 }
 
+.join-nav{
+    background-color: $yellow;
+    text-align: center;
+    padding: 3rem 0;
 
-// footer
+    .rectangle{
+        @extend %rectangle-mini-w;
+    }
 
+    label{
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        margin-right: 23rem;
+    }
+    .input{
+        width: 445px;
+        height: 53px;
+        padding-left: 1.25rem;
+        border-radius: 3px;
+        background-color: $yellow;
+        border: solid 1px $white;
+        color: $white;
+    }
+    .input::placeholder{
+        color: $white;
+    }
 
-.nav_footer{
-    @extend%copy-right
+    .submit-button{
+        width: 119px;
+        height: 53px;
+        background-color: $black;
+        color: $white;
+        border-radius: 3px;
+    }
 }
-
-
 
 
 
