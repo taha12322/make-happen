@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
@@ -15,6 +24,21 @@
     <link rel="stylesheet" href="../assets/css/pricing.css">
     <title>pricing</title>
 </head>
+<!-- The mobile-menu -->
+<div id="myNav" class="mobile-menu">
+
+    <!-- Button to close the mobile-menu navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <!-- mobile-menu content -->
+    <div class="mobile-menu-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+
+</div>
 
 <body>
 
@@ -25,7 +49,7 @@
             </div>
             <div class="menu d-flex justify-content-between align-items-center ">
                 <div class="item  d-md-none">
-                    <a href="#"> <img src="../assets/img/bars.png" alt=""></a>
+                    <a class="bars" onclick="openNav()"> <img src=" ../assets/img/bars.png" alt=""></a>
                 </div>
                 <div class="item m-3 d-none d-md-inline">
                     <a href="#">home</a>
@@ -35,6 +59,7 @@
                 </div>
                 <div class="item m-3 d-none d-md-inline">
                     <a href="#">portfolio <i class="material-icons">&#xe5c5;</i></a>
+
                 </div>
                 <div class="item m-3 d-none d-md-inline ">
                     <a href="#">article <i class="material-icons">&#xe5c5;</i></a>
@@ -88,7 +113,7 @@
         </div>
     </section>
     <!-- purchese cards section  -->
-    <section id="Purchase-cards " class="pb-5">
+    <section id="Purchase-cards " class="pb-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-12">
@@ -101,14 +126,12 @@
                             <div class="card-title">
                                 <h2 class="">Personal</h2>
                                 <div class="rectangle-mini"></div>
-
                             </div>
                             <div class="card-cost">
                                 <div class=" position-relative ">
                                     <h6 class="mb-0 position-absolute ">$</h6>
                                     <p class="h1 d-inline">10</p><span class="position-absolute">/ month</span>
                                 </div>
-
                             </div>
                             <div class="card-details d-flex flex-column">
                                 <div class=" row-detail d-flex align-items-center justify-content-start">
@@ -261,11 +284,11 @@
         <div class="line"></div>
     </div>
     <!-- testimony section- carousel -->
-    <section class="pt-5 pb-5">
+    <section class="pt-4 pb-2">
         <div class="container">
-            <div class="row  ">
+            <div class="row flex-sm-row-reverse flex-row-reverse ">
                 <div class=" col-12 col-sm-4 col-md-12 ">
-                    <div class="row justify-content-end pb-5 ">
+                    <div class="mr-30 row justify-content-end pb-5 ">
                         <div class="col-7 col-md-12 col-sm-10 text-end text-sm-end text-md-center">
                             <h1 class="title font-weight-bolder">Testimony</h1>
                         </div>
@@ -274,7 +297,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-12 col-sm-8 col-md-12  pt-4  ">
+                <div class=" col-12 col-sm-8 col-md-12    ">
                     <div class="carousel-wrap pt-7 pb-5">
                         <div class="owl-carousel owl-carousel-1 owl-theme">
                             <div class="item ">
@@ -390,7 +413,7 @@
         <div class="line"></div>
     </div>
     <!-- our clients section - carousel -->
-    <section class="carousel-slider pb-5 pt-5">
+    <section class="carousel-slider pb-4 pt-4">
         <div class="container   text-start text-sm-start text-md-center">
             <div class="row">
                 <div class=" col-12 col-sm-4 col-md-12 pb-5 ">
@@ -403,8 +426,8 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-12 col-sm-8 col-md-12  pt-4  ">
-                    <div class="carousel-wrap pt-7 pb-5">
+                <div class=" col-12 col-sm-8 col-md-12  ">
+                    <div class="carousel-wrap  pb-5">
                         <div class="owl-carousel owl-theme">
                             <div class="item carousel-img ">
                                 <img src="../assets/img/pricing/cc-paypal.png" />
@@ -505,7 +528,7 @@
             </div>
         </div>
     </footer>
-    <div class="copy-right d-flex align-items-center justify-content-center">
+    <div class="copy_right d-flex align-items-center justify-content-center">
         <p>2018 Makaraya . All rights reserved .</p>
     </div>
     <script src="../assets/js/jquery-3.6.0.min.js"></script>

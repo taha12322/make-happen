@@ -1,10 +1,12 @@
 @import "../colors";
+@import "../mobile-menu";
 @import "../header";
 @import "../footer";
 @import "../slider";
 @import "../copyRight";
 @import "../banner";
 @import "../shaps";
+
 
 * {
     padding: 0;
@@ -24,7 +26,7 @@
     border-radius: 0;
     height       : 500px;
     border       : $yellow 1px solid;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
     &.users {
         border          : $black 1px solid;
@@ -281,8 +283,8 @@
 
 
 
-.copy-right {
-    @extend %copy-right;
+.copy_right {
+    @extend %copy_right;
 }
 
 @media screen and (max-width : 998px) {
@@ -310,10 +312,23 @@
     }
 }
 
+@media (min-width: 576px) {
+    .mr-30 {
+        margin-right: -30px;
+    }
+}
+
+
 
 
 @media screen and (max-width : 767px) {
+
+
     .card.purchese-card {
+        width       : 80%;
+        margin-right: auto;
+        margin-left : auto;
+
         .card-body {
             .card-details {
                 .row-detail {
@@ -328,5 +343,12 @@
             }
 
         }
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .card.purchese-card {
+        width: 100%;
+
     }
 }
