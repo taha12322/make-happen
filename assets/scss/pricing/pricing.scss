@@ -1,4 +1,5 @@
 @import "../colors";
+@import "../mobile-menu";
 @import "../header";
 @import "../footer";
 @import "../slider";
@@ -12,12 +13,8 @@
     margin : 0;
 }
 
-
-
 .rectangle-r {
     @extend %rectangle-r;
-
-
 }
 
 .rectangle-mini {
@@ -29,7 +26,7 @@
     border-radius: 0;
     height       : 500px;
     border       : $yellow 1px solid;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
     &.users {
         border          : $black 1px solid;
@@ -155,6 +152,49 @@
     @extend %line;
 }
 
+//card testimony
+.card.testimony {
+    border       : none;
+    border-bottom: 1px solid $yellow;
+    border-right : 1px solid $yellow;
+    border-left  : 1px solid $yellow;
+
+    .card-header {
+        height          : 50px;
+        background-color: $black;
+        border          : 1px $black solid;
+    }
+
+    .card-body {
+        height: 285px;
+
+
+        .avatar {
+            .img {}
+        }
+
+        .card-title {
+            h2 {
+                font-size  : 25px;
+                font-weight: 900;
+            }
+
+            h6 {
+                color    : $yellow;
+                font-size: 12px;
+            }
+        }
+
+        .card-caption {
+            p {
+                font-size: 16px;
+                width    : 70%;
+                margin   : auto;
+            }
+
+        }
+    }
+}
 
 // owl carousel
 .owl-carousel {
@@ -222,13 +262,14 @@
 
 // .owl-carousel .next-slide:hover {
 //     background-position: -24px -3px;
-// }
+//   }
 
 .owl-theme .owl-dots .owl-dot span {
     width     : 20px;
     height    : 3px;
     margin    : 5px 7px;
     background: #D6D6D6;
+    margin-top: 30px;
 
 }
 
@@ -242,8 +283,8 @@
 
 
 
-.copy-right {
-    @extend %copy-right;
+.copy_right {
+    @extend %copy_right;
 }
 
 @media screen and (max-width : 998px) {
@@ -271,10 +312,23 @@
     }
 }
 
+@media (min-width: 576px) {
+    .mr-30 {
+        margin-right: -30px;
+    }
+}
+
+
 
 
 @media screen and (max-width : 767px) {
+
+
     .card.purchese-card {
+        width       : 80%;
+        margin-right: auto;
+        margin-left : auto;
+
         .card-body {
             .card-details {
                 .row-detail {
@@ -289,5 +343,12 @@
             }
 
         }
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .card.purchese-card {
+        width: 100%;
+
     }
 }

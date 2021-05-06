@@ -1,3 +1,58 @@
+.mobile-menu {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.mobile-menu-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.mobile-menu a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.mobile-menu a:hover,
+.mobile-menu a:focus {
+  color: #f1f1f1;
+}
+
+.mobile-menu .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .mobile-menu {
+    overflow-y: auto;
+  }
+  .mobile-menu a {
+    font-size: 20px;
+  }
+  .mobile-menu .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
 .header {
   background-color: #000;
   width: 100%;
@@ -14,6 +69,10 @@
   padding-bottom: 21px;
   border-bottom: #ffb51f solid 4px;
   border-radius: 3px;
+}
+
+.header nav .menu .item .bars:hover {
+  border-bottom: transparent solid 4px;
 }
 
 .header nav .menu .item i {
@@ -77,13 +136,9 @@ footer li {
   color: #ffb51f;
   font-weight: bolder;
   font-size: 25px;
-  -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 /* Position the "next button" to the right */
@@ -129,13 +184,13 @@ footer li {
   }
 }
 
-.copy-right {
+.copy_right {
   background-color: #ffb51f;
   height: 50px;
   width: 100%;
 }
 
-.copy-right p {
+.copy_right p {
   font-family: Roboto;
   font-size: 14px;
   text-align: center;
@@ -150,15 +205,9 @@ footer li {
   background-image: url(../img/pricing/bg_pricing.png);
   background-size: cover;
   background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 60vh;
 }
 
@@ -183,15 +232,9 @@ footer li {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: start;
+  align-items: center;
 }
 
 .banner-container .page-address .container {
@@ -230,7 +273,7 @@ footer li {
 
 .line {
   width: 60%;
-  height: 1px;
+  height: 2px;
   background-color: #ffb51f;
   margin: auto;
   margin-top: 40px;
@@ -253,7 +296,7 @@ footer li {
   border-radius: 0;
   height: 500px;
   border: #ffb51f 1px solid;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .card.purchese-card.users {
@@ -297,9 +340,7 @@ footer li {
 }
 
 .card.purchese-card .card-body .card-title {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 .card.purchese-card .card-body .card-title h2 {
@@ -307,9 +348,7 @@ footer li {
 }
 
 .card.purchese-card .card-body .card-cost {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 .card.purchese-card .card-body .card-cost h6 {
@@ -329,9 +368,7 @@ footer li {
 }
 
 .card.purchese-card .card-body .card-details {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 .card.purchese-card .card-body .card-details .row-detail {
@@ -345,9 +382,7 @@ footer li {
 }
 
 .card.purchese-card .card-body .card-btn {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   color: #ffffff;
   background-color: #ffb51f;
   width: 134px;
@@ -360,21 +395,46 @@ footer li {
   padding-left: 5px;
 }
 
+.card.testimony {
+  border: none;
+  border-bottom: 1px solid #ffb51f;
+  border-right: 1px solid #ffb51f;
+  border-left: 1px solid #ffb51f;
+}
+
+.card.testimony .card-header {
+  height: 50px;
+  background-color: #0d0908;
+  border: 1px #0d0908 solid;
+}
+
+.card.testimony .card-body {
+  height: 285px;
+}
+
+.card.testimony .card-body .card-title h2 {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.card.testimony .card-body .card-title h6 {
+  color: #ffb51f;
+  font-size: 12px;
+}
+
+.card.testimony .card-body .card-caption p {
+  font-size: 16px;
+  width: 70%;
+  margin: auto;
+}
+
 .owl-carousel .owl-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .owl-carousel .owl-item img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: unset !important;
 }
@@ -390,12 +450,8 @@ footer li {
   position: absolute;
   top: -94%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -403,6 +459,7 @@ footer li {
   height: 3px;
   margin: 5px 7px;
   background: #D6D6D6;
+  margin-top: 30px;
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
@@ -421,7 +478,18 @@ footer li {
   }
 }
 
+@media (min-width: 576px) {
+  .mr-30 {
+    margin-right: -30px;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .card.purchese-card {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .card.purchese-card .card-body .card-details .row-detail {
     padding-bottom: 20px;
   }
@@ -429,6 +497,12 @@ footer li {
     margin-left: 10 px;
     font-size: 16px;
     line-height: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card.purchese-card {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=pricing.css.map */

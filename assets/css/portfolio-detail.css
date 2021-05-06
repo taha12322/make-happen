@@ -16,6 +16,10 @@
   border-radius: 3px;
 }
 
+.header nav .menu .item .bars:hover {
+  border-bottom: transparent solid 4px;
+}
+
 .header nav .menu .item i {
   color: #fff;
   font-size: 1rem;
