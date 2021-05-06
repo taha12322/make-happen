@@ -4,15 +4,10 @@
 @import "../copyRight";
 @import "../shaps";
 
-
-
 *{
     margin: 0;
     padding: 0;
 }
-
-
-
 
 .img-nav{
     position: relative;
@@ -95,7 +90,11 @@
     }
 }
 
-.cards{
+.cards--people{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
     .Card{
         width: 28%;
 
@@ -113,8 +112,6 @@
         }
     }
 }
-
-
 
 
 .magic-nav{
@@ -159,14 +156,14 @@
         @extend %rectangle-mini-w;
     }
 
-    label{
+    .label{
         font-size: 20px;
         font-weight: 700;
         margin-bottom: 5px;
         margin-right: 23rem;
     }
     .input{
-        width: 445px;
+        width: 29%;
         height: 53px;
         padding-left: 1.25rem;
         border-radius: 3px;
@@ -195,7 +192,6 @@
 
 
 
-
 // labtop size
 @media only screen and (max-width: 1024px) {
 
@@ -203,6 +199,10 @@
         left: 35%;
         top: 21%;
     }
+    .join-nav .label{
+        margin-right: 14rem;
+    }
+    
 }
 
 // tablet size
@@ -212,6 +212,9 @@
     .img-nav nav{
         left: 38%;
         top: 25%;
+    }
+    .join-nav .input {
+        width: 38%;
     }
 }
 
@@ -238,16 +241,31 @@
     .map img {
         height: 8rem;
     }
-    
+    .cards--people{
+        flex-direction: column;
+        align-items: center ;
+        .Card{
+            margin-top: 1rem;
+            width: 60%;
+        }
+    }
+    .join-nav .input {
+        width: 80%;
+    }
+    .join-nav .label {
+        margin-right: 0;
+    }
+        .submit-button{
+        margin-top: 1rem;
+    }
 }
+
 
 // small mobile size
 @media only screen and (max-width: 375px) {
     .map-site{
         height: 25px !important;
         padding-top: 0px !important;
-
-
 
         #home{
             padding-left: 1rem !important; 
@@ -261,7 +279,22 @@
     .map img {
         height: 8rem;
     }
-    
+    .cards--people{
+        flex-direction: column ;
+        align-items: center ;
+        .Card{
+            width: 60%;
+        }
+    }
+    .join-nav .input {
+        width: 80%;
+    }
+    .join-nav .label {
+        margin-right: 0;
+    }
+    .submit-button{
+        margin-top: 1rem;
+    }
 }
 
 

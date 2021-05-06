@@ -171,20 +171,30 @@ footer li {
   font-weight: 600;
 }
 
-.cards .Card {
+.cards--people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cards--people .Card {
   width: 28%;
 }
 
-.cards .Card img {
+.cards--people .Card img {
   width: 100%;
 }
 
-.cards .Card .Card-body {
+.cards--people .Card .Card-body {
   padding: 5px 0;
   border: #ffb51f solid 1px;
 }
 
-.cards .Card .Card-body h4 {
+.cards--people .Card .Card-body h4 {
   margin: 0;
 }
 
@@ -226,7 +236,7 @@ footer li {
   padding: 3rem 0;
 }
 
-.join-nav label {
+.join-nav .label {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 5px;
@@ -234,7 +244,7 @@ footer li {
 }
 
 .join-nav .input {
-  width: 445px;
+  width: 29%;
   height: 53px;
   padding-left: 1.25rem;
   border-radius: 3px;
@@ -272,12 +282,18 @@ footer li {
     left: 35%;
     top: 21%;
   }
+  .join-nav .label {
+    margin-right: 14rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .img-nav nav {
     left: 38%;
     top: 25%;
+  }
+  .join-nav .input {
+    width: 38%;
   }
 }
 
@@ -298,6 +314,28 @@ footer li {
   .map img {
     height: 8rem;
   }
+  .cards--people {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cards--people .Card {
+    margin-top: 1rem;
+    width: 60%;
+  }
+  .join-nav .input {
+    width: 80%;
+  }
+  .join-nav .label {
+    margin-right: 0;
+  }
+  .submit-button {
+    margin-top: 1rem;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -313,6 +351,27 @@ footer li {
   }
   .map img {
     height: 8rem;
+  }
+  .cards--people {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cards--people .Card {
+    width: 60%;
+  }
+  .join-nav .input {
+    width: 80%;
+  }
+  .join-nav .label {
+    margin-right: 0;
+  }
+  .submit-button {
+    margin-top: 1rem;
   }
 }
 /*# sourceMappingURL=about-us.css.map */
