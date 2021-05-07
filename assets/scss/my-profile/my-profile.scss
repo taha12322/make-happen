@@ -1,0 +1,108 @@
+@import "../colors";
+@import "../header";
+@import "../footer";
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.article-banner {
+    position: relative;
+    background-image: url('../img/my profile/bg_my_profile.png');
+    height: 350px;
+    background-size: cover;
+    .article-heading {
+        position: absolute;
+        top: 36%;
+    }
+    .article-breadcrumb {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        .breadcrumb {
+            margin: auto;
+        }
+        .active {
+            color: $white;
+        }
+        .breadcrumb-item {
+            color: $white;
+            a {
+                color: $yellow;
+            }
+        }
+    }
+}
+
+.card {
+    padding: 0;
+    border: none;
+    .row {
+        flex-wrap: nowrap;
+        justify-content: center;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .col-md-3 {
+        width: 23%;
+    }
+    .card-body span {
+        border: 1px solid $yellow;
+        padding: 7px 13px;
+        border-radius: 30px;
+        font-size: 10px;
+        color: $yellow;
+    }
+}
+
+.border-yellow {
+    border: 1px solid $yellow;
+    height: fit-content;
+}
+
+.yellow-border {
+    border: 1px solid $yellow;
+    width: 60%;
+}
+
+.pagination li {
+    a {
+        color: $yellow;
+    }
+    a:focus {
+        color: $white;
+        background: $yellow;
+        border: none;
+    }
+}
+
+.text-grey {
+    color: $grey;
+}
+
+.profile-details {
+    .profile-img img {
+        width: 200px;
+        margin: auto;
+    }
+    .likeandviews {
+        span {
+            margin-top: 10px;
+            img {
+                width: 14px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .followme img {
+        width: 30px;
+        margin-right: 10px;
+    }
+}
