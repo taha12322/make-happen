@@ -132,6 +132,11 @@ body {
   color: #ffb51f;
 }
 
+.border-yellow {
+  border: 1px solid #ffb51f;
+  height: fit-content;
+}
+
 .yellow-border {
   border: 1px solid #ffb51f;
   width: 60%;
@@ -145,5 +150,28 @@ body {
   color: #ffffff;
   background: #ffb51f;
   border: none;
+}
+
+.text-grey {
+  color: #818a91;
+}
+
+.profile-details .profile-img img {
+  width: 200px;
+  margin: auto;
+}
+
+.profile-details .likeandviews span {
+  margin-top: 10px;
+}
+
+.profile-details .likeandviews span img {
+  width: 14px;
+  margin-right: 10px;
+}
+
+.profile-details .followme img {
+  width: 30px;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=my-profile.css.map */
