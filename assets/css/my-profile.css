@@ -103,4 +103,47 @@ body {
 .article-banner .article-breadcrumb .breadcrumb-item a {
   color: #ffb51f;
 }
+
+.card {
+  padding: 0;
+  border: none;
+}
+
+.card .row {
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.card .row img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .col-md-3 {
+  width: 23%;
+}
+
+.card .card-body span {
+  border: 1px solid #ffb51f;
+  padding: 7px 13px;
+  border-radius: 30px;
+  font-size: 10px;
+  color: #ffb51f;
+}
+
+.yellow-border {
+  border: 1px solid #ffb51f;
+  width: 60%;
+}
+
+.pagination li a {
+  color: #ffb51f;
+}
+
+.pagination li a:focus {
+  color: #ffffff;
+  background: #ffb51f;
+  border: none;
+}
 /*# sourceMappingURL=my-profile.css.map */

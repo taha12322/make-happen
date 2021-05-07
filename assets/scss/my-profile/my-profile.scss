@@ -37,3 +37,43 @@ body {
         }
     }
 }
+
+.card {
+    padding: 0;
+    border: none;
+    .row {
+        flex-wrap: nowrap;
+        justify-content: center;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .col-md-3 {
+        width: 23%;
+    }
+    .card-body span {
+        border: 1px solid $yellow;
+        padding: 7px 13px;
+        border-radius: 30px;
+        font-size: 10px;
+        color: $yellow;
+    }
+}
+
+.yellow-border {
+    border: 1px solid $yellow;
+    width: 60%;
+}
+
+.pagination li {
+    a {
+        color: $yellow;
+    }
+    a:focus {
+        color: $white;
+        background: $yellow;
+        border: none;
+    }
+}
