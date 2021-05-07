@@ -168,9 +168,9 @@
                 Maecenas faucibus neque nec purus viverra molestie. Sed euismod eleifend faucibus. Maecenas viverra massa quis felis finibus posuere. Cras ut luctus quam. Vestibulum eget lectus id nulla tincidunt posuere.
             </p>
         </div>
-        <div class="row  replyandlikes">
+        <div class="row  replyandlikes my-4">
             <div class="col-md-6 like-btn">
-                <p f><i class="fas fa-heart like-counter"></i><span class="click-text"><a id="clicks"></span></p>
+                <i class="far fa-heart like-counter"><span class="click-text"><a class="mx-3" id="clicks"></a></span></i>
             </div>
             <div class="col-md-6 comments-btn">
                 <button type="button" class="btn btn-outline-warning float-end">
@@ -181,7 +181,62 @@
         </div>
     </div>
     <hr>
+    <div class="container article-comments my-5">
+        <div class="row">
+            <div class="col-md-2 text-center">
+                <img src="../assets/img/Article Detail/Poppy_Sinclair.png" alt="">
+            </div>
+            <div class="col-md-10">
+                <div class="row">
+                    <b>Poppy Sinclair</b>
+                </div>
+                <div class="row publish-date mt-3">
+                    Monday, 10 September 2018
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <p>
+                Maecenas faucibus neque nec purus viverra molestie. Sed euismod eleifend faucibus. Maecenas viverra massa quis felis finibus posuere. Cras ut luctus quam. Vestibulum eget lectus id nulla tincidunt posuere.
+            </p>
+        </div>
+        <div class="row  replyandlikes my-4">
+            <div class="col-md-6 like-btn">
+                <i class="far fa-heart likes-counter"><span class="click-text"><a class="mx-3" id="likeclicks"></a></span></i>
+            </div>
+            <div class="col-md-6 comments-btn">
+                <button type="button" class="btn btn-outline-warning float-end">
+                    <img src="../assets/img/Article Detail/Reply.png" alt="">
+                    Reply
+                </button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="load-more-btn text-center my-5">
+        <button class="btn btn-warning text-white">
+        Load More ...
+   </button>
+    </div>
+    <hr>
+    <div class="container post-comments my-5 ">
+        <div class="row">
+            <h2 class="text-center">Post a Comment</h2>
+            <div class="line-separator my-3">
 
+            </div>
+            <label for="email"><b>Email address</b></label>
+            <input type="email" id="email" name="email" placeholder="Email address">
+            <label for="name"><b>Name</b></label>
+            <input type="name" id="name" name="name" placeholder="Name">
+            <label for="Comment"><b>Comment</b></label>
+            <textarea id="Comment" name="Comment" rows="4" cols="50" placeholder="Comment ..."></textarea>
+            <div class="send-comment-btn text-center">
+                <input class="btn btn-warning text-white my-4" type="submit" value="Submit">
+            </div>
+
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
@@ -195,6 +250,16 @@
             $("#id").off('click');
             document.getElementById("clicks").innerHTML = clicks;
             $('.like-counter').addClass("liked");
+        });
+        var likeclicks = 15;
+
+        document.getElementById("clicks").innerHTML = likeclicks;
+
+        $('.likes-counter').click(function() {
+            likeclicks += 1;
+            $("#id").off('likeclick');
+            document.getElementById("likeclicks").innerHTML = likeclicks;
+            $('.likes-counter').addClass("liked");
         });
     </script>
 </body>

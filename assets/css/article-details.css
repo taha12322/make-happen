@@ -16,6 +16,13 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   bottom: 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.article-banner .article-breadcrumb .breadcrumb {
+  margin: auto;
 }
 
 .article-banner .article-breadcrumb .breadcrumb-item {
@@ -61,6 +68,11 @@ body {
   height: 5px;
   width: 40px;
   margin: auto;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .share-article .socialmedia img {
@@ -85,6 +97,10 @@ hr {
   border: none;
 }
 
+.get-inspired .other-articles .card .row {
+  flex-wrap: nowrap;
+}
+
 .get-inspired .other-articles .card .col-md-3 {
   width: 23%;
 }
@@ -99,6 +115,7 @@ hr {
 
 .yellow-border {
   border: 1px solid #ffb51f;
+  width: 60%;
 }
 
 .comments-count {
@@ -116,26 +133,46 @@ hr {
 }
 
 .article-comments .replyandlikes .like-btn .like-counter {
-  color: #000;
+  color: #ffb51f;
   text-decoration: none;
-  margin-right: 5px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-.article-comments .replyandlikes .like-btn .like-counter:hover {
-  background-color: blue;
+.article-comments .replyandlikes .like-btn .like-counter #clicks {
+  color: black;
+  text-decoration: none;
+  font-family: monospace;
 }
 
-.article-comments .replyandlikes .like-btn p {
-  border: 2px solid blue;
-  width: 30px;
-  border-radius: 20%;
+.article-comments .replyandlikes .like-btn .likes-counter {
+  color: #ffb51f;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-.article-comments .replyandlikes .like-btn .liked {
-  font-weight: bold;
+.article-comments .replyandlikes .like-btn .likes-counter #likeclicks {
+  color: black;
+  text-decoration: none;
+  font-family: monospace;
 }
 
-.article-comments .replyandlikes .comments-btn button {
-  width: auto;
+.post-comments {
+  width: 60%;
+}
+
+.post-comments input {
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  padding: 10px;
+}
+
+.post-comments textarea {
+  border: 1px solid rgba(128, 128, 128, 0.4);
+}
+
+.post-comments label {
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=article-details.css.map */
