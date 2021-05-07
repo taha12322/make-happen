@@ -168,16 +168,35 @@
                 Maecenas faucibus neque nec purus viverra molestie. Sed euismod eleifend faucibus. Maecenas viverra massa quis felis finibus posuere. Cras ut luctus quam. Vestibulum eget lectus id nulla tincidunt posuere.
             </p>
         </div>
-        <div class="row comments-btn float-end">
-            <button type="button" class="btn btn-outline-warning">Reply</button>
+        <div class="row  replyandlikes">
+            <div class="col-md-6 like-btn">
+                <p f><i class="fas fa-heart like-counter"></i><span class="click-text"><a id="clicks"></span></p>
+            </div>
+            <div class="col-md-6 comments-btn">
+                <button type="button" class="btn btn-outline-warning float-end">
+                    <img src="../assets/img/Article Detail/Reply.png" alt="">
+                    Reply
+                </button>
+            </div>
         </div>
-        <hr>
-
     </div>
+    <hr>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var clicks = 14;
+
+        document.getElementById("clicks").innerHTML = clicks;
+
+        $('.like-counter').click(function() {
+            clicks += 1;
+            $("#id").off('click');
+            document.getElementById("clicks").innerHTML = clicks;
+            $('.like-counter').addClass("liked");
+        });
+    </script>
 </body>
 
 </html>

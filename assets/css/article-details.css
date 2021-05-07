@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -114,7 +115,27 @@ hr {
   color: #818a91;
 }
 
-.article-comments .comments-btn button {
+.article-comments .replyandlikes .like-btn .like-counter {
+  color: #000;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.article-comments .replyandlikes .like-btn .like-counter:hover {
+  background-color: blue;
+}
+
+.article-comments .replyandlikes .like-btn p {
+  border: 2px solid blue;
+  width: 30px;
+  border-radius: 20%;
+}
+
+.article-comments .replyandlikes .like-btn .liked {
+  font-weight: bold;
+}
+
+.article-comments .replyandlikes .comments-btn button {
   width: auto;
 }
 /*# sourceMappingURL=article-details.css.map */

@@ -1,4 +1,5 @@
 @import '../colors.scss';
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 body {
     margin: 0;
     padding: 0;
@@ -108,7 +109,27 @@ hr {
     .publish-date {
         color: $grey;
     }
-    .comments-btn button {
-        width: auto;
+    .replyandlikes {
+        .like-btn {
+            .like-counter {
+                color: #000;
+                text-decoration: none;
+                margin-right: 5px;
+                &:hover {
+                    background-color: blue;
+                }
+            }
+            p {
+                border: 2px solid blue;
+                width: 30px;
+                border-radius: 20%;
+            }
+            .liked {
+                font-weight: bold;
+            }
+        }
+        .comments-btn button {
+            width: auto;
+        }
     }
 }
