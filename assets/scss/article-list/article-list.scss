@@ -1,3 +1,91 @@
 @import "../colors";
 @import "../header";
 @import "../footer";
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.article-banner {
+    position: relative;
+    background-image: url('../img/article list/bg_article_list.png');
+    height: 350px;
+    background-size: cover;
+    .article-heading {
+        position: absolute;
+        top: 36%;
+    }
+    .article-breadcrumb {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        .breadcrumb {
+            margin: auto;
+        }
+        .active {
+            color: $white;
+        }
+        .breadcrumb-item {
+            color: $white;
+            a {
+                color: $yellow;
+            }
+        }
+    }
+}
+
+.line-separator {
+    background-color: $yellow;
+    height: 5px;
+    width: 40px;
+    margin: auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.card {
+    padding: 0;
+    border: none;
+    .row {
+        flex-wrap: nowrap;
+        justify-content: center;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .col-md-3 {
+        width: 23%;
+    }
+    .card-body span {
+        border: 1px solid $yellow;
+        padding: 7px 13px;
+        border-radius: 30px;
+        font-size: 10px;
+        color: $yellow;
+    }
+}
+
+.yellow-border {
+    border: 1px solid $yellow;
+    width: 60%;
+}
+
+.pagination li {
+    a {
+        color: $yellow;
+    }
+    a:focus {
+        color: $white;
+        background: $yellow;
+        border: none;
+    }
+}
