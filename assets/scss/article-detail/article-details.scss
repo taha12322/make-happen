@@ -1,4 +1,6 @@
-@import '../colors.scss';
+@import "../colors";
+@import "../header";
+@import "../footer";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 body {
     margin: 0;
@@ -93,6 +95,12 @@ hr {
             border: none;
             .row {
                 flex-wrap: nowrap;
+                justify-content: center;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
             .col-md-3 {
                 width: 23%;
@@ -166,7 +174,3 @@ hr {
         margin-bottom: 5px;
     }
 }
-
-@import "../colors";
-@import "../header";
-@import "../footer";

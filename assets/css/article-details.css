@@ -1,5 +1,67 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+.header {
+  background-color: #000;
+  width: 100%;
+  height: 70px;
+}
+
+.header nav .menu .item a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: transparent solid 4px;
+}
+
+.header nav .menu .item a:hover {
+  padding-bottom: 21px;
+  border-bottom: #ffb51f solid 4px;
+  border-radius: 3px;
+}
+
+.header nav .menu .item .bars:hover {
+  border-bottom: transparent solid 4px;
+}
+
+.header nav .menu .item i {
+  color: #fff;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: 100px;
+  }
+}
+
+/* footer */
+.boxb {
+  background-color: #000;
+  width: 100%;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.footer-items {
+  list-style: none;
+}
+
+footer li {
+  padding-bottom: 5px;
+}
+
+.footer-items a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sub {
+  font-weight: lighter;
+  padding-left: 7px;
+  color: #818a91;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -100,6 +162,13 @@ hr {
 
 .get-inspired .other-articles .card .row {
   flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.get-inspired .other-articles .card .row img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .get-inspired .other-articles .card .col-md-3 {
@@ -141,7 +210,7 @@ hr {
 }
 
 .article-comments .replyandlikes .like-btn .like-counter #clicks {
- 
+  color: black;
   text-decoration: none;
   font-family: monospace;
 }
@@ -154,7 +223,7 @@ hr {
 }
 
 .article-comments .replyandlikes .like-btn .likes-counter #likeclicks {
- 
+  color: black;
   text-decoration: none;
   font-family: monospace;
 }
@@ -175,68 +244,5 @@ hr {
 .post-comments label {
   margin-top: 15px;
   margin-bottom: 5px;
-=======
-.header {
-  background-color: #000;
-  width: 100%;
-  height: 70px;
-}
-
-.header nav .menu .item a {
-  color: #fff;
-  text-decoration: none;
-  border-bottom: transparent solid 4px;
-}
-
-.header nav .menu .item a:hover {
-  padding-bottom: 21px;
-  border-bottom: #ffb51f solid 4px;
-  border-radius: 3px;
-}
-
-.header nav .menu .item .bars:hover {
-  border-bottom: transparent solid 4px;
-}
-
-.header nav .menu .item i {
-  color: #fff;
-  font-size: 1rem;
-}
-
-@media screen and (max-width: 767px) {
-  .header {
-    height: 100px;
-  }
-}
-
-/* footer */
-.boxb {
-  background-color: #000;
-  width: 100%;
-}
-
-ul {
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-.footer-items {
-  list-style: none;
-}
-
-footer li {
-  padding-bottom: 5px;
-}
-
-.footer-items a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.sub {
-  font-weight: lighter;
-  padding-left: 7px;
-  color: #818a91;
-
 }
 /*# sourceMappingURL=article-details.css.map */
