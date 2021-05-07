@@ -1,1 +1,106 @@
-/* No CSS *//*# sourceMappingURL=my-profile.css.map */
+.header {
+  background-color: #000;
+  width: 100%;
+  height: 70px;
+}
+
+.header nav .menu .item a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: transparent solid 4px;
+}
+
+.header nav .menu .item a:hover {
+  padding-bottom: 21px;
+  border-bottom: #ffb51f solid 4px;
+  border-radius: 3px;
+}
+
+.header nav .menu .item .bars:hover {
+  border-bottom: transparent solid 4px;
+}
+
+.header nav .menu .item i {
+  color: #fff;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: 100px;
+  }
+}
+
+/* footer */
+.boxb {
+  background-color: #000;
+  width: 100%;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.footer-items {
+  list-style: none;
+}
+
+footer li {
+  padding-bottom: 5px;
+}
+
+.footer-items a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sub {
+  font-weight: lighter;
+  padding-left: 7px;
+  color: #818a91;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.article-banner {
+  position: relative;
+  background-image: url("../img/my profile/bg_my_profile.png");
+  height: 350px;
+  background-size: cover;
+}
+
+.article-banner .article-heading {
+  position: absolute;
+  top: 36%;
+}
+
+.article-banner .article-breadcrumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.article-banner .article-breadcrumb .breadcrumb {
+  margin: auto;
+}
+
+.article-banner .article-breadcrumb .active {
+  color: #ffffff;
+}
+
+.article-banner .article-breadcrumb .breadcrumb-item {
+  color: #ffffff;
+}
+
+.article-banner .article-breadcrumb .breadcrumb-item a {
+  color: #ffb51f;
+}
+/*# sourceMappingURL=my-profile.css.map */
