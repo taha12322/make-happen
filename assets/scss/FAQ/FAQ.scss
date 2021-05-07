@@ -1,0 +1,79 @@
+@import "../colors";
+@import "../mobile-menu";
+@import "../header";
+@import "../footer";
+@import "../copyRight";
+@import "../banner";
+@import "../shaps";
+
+.rectangle-r {
+    @extend %rectangle-r;
+}
+
+.accordion-container {
+    .accordion {
+        background-color: #eee;
+        color           : $white;
+        cursor          : pointer;
+        padding         : 18px;
+        width           : 100%;
+        text-align      : left;
+        outline         : none;
+        font-size       : 16px;
+        font-weight     : 600;
+        transition      : 0.4s;
+        height          : 62px;
+        padding         : 20px;
+        border          : solid 1px rgba(255, 181, 31, 0.1);
+        background-color: $black;
+
+
+        &:after {
+            content      : '\002B';
+            color        : $yellow;
+            border       : 2px solid $yellow;
+            border-radius: 3px;
+            float        : left;
+            margin-right : 15px;
+            padding-left : 5px;
+            padding-right: 5px;
+            font-weight  : 900;
+            margin-top   : -2px;
+
+        }
+
+        &.active {
+
+
+            &:after {
+                content      : "\002D";
+                color        : $yellow !important;
+                padding-left : 7.4px;
+                padding-right: 7.3px;
+            }
+        }
+
+        &:hover {}
+    }
+
+    .panel {
+        padding         : 0 40px;
+        background-color: white;
+        max-height      : 0;
+        overflow        : hidden;
+        transition      : max-height 0.2s ease-out;
+        border          : solid 1px rgba(255, 181, 31, 0.35);
+        border-top      : none;
+        border-bottom   : none;
+        font-family     : Roboto;
+        font-size       : 16px;
+        line-height     : 1.5;
+        letter-spacing  : 0.8px;
+        text-align      : left;
+        color           : #373a3c;
+
+        p {
+            padding: 40px 0;
+        }
+    }
+}

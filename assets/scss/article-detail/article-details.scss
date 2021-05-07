@@ -1,3 +1,4 @@
+
 @import '../colors.scss';
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 body {
@@ -77,7 +78,7 @@ body {
 }
 
 hr {
-    height: 2px!important;
+    height: 2px;
     background-color: $yellow;
     border: none;
     width: 60%;
@@ -132,7 +133,7 @@ hr {
                 font-size: 20px;
                 cursor: pointer;
                 #clicks {
-                    color: black;
+                   
                     text-decoration: none;
                     font-family: monospace;
                 }
@@ -143,7 +144,7 @@ hr {
                 font-size: 20px;
                 cursor: pointer;
                 #likeclicks {
-                    color: black;
+                    
                     text-decoration: none;
                     font-family: monospace;
                 }
@@ -166,3 +167,8 @@ hr {
         margin-bottom: 5px;
     }
 }
+=======
+@import "../colors";
+@import "../header";
+@import "../footer";
+
