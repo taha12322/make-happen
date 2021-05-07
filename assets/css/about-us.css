@@ -16,6 +16,10 @@
   border-radius: 3px;
 }
 
+.header nav .menu .item .bars:hover {
+  border-bottom: transparent solid 4px;
+}
+
 .header nav .menu .item i {
   color: #fff;
   font-size: 1rem;
@@ -172,13 +176,9 @@ footer li {
 }
 
 .cards--people {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .cards--people .Card {
@@ -253,18 +253,6 @@ footer li {
   color: #ffffff;
 }
 
-.join-nav .input::-webkit-input-placeholder {
-  color: #ffffff;
-}
-
-.join-nav .input:-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.join-nav .input::-ms-input-placeholder {
-  color: #ffffff;
-}
-
 .join-nav .input::placeholder {
   color: #ffffff;
 }
@@ -315,13 +303,8 @@ footer li {
     height: 8rem;
   }
   .cards--people {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .cards--people .Card {
     margin-top: 1rem;
@@ -353,13 +336,8 @@ footer li {
     height: 8rem;
   }
   .cards--people {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .cards--people .Card {
     width: 60%;
