@@ -4,6 +4,7 @@
     height          : 70px;
 
 
+
     nav {
         .logo {}
 
@@ -18,6 +19,14 @@
                         padding-bottom: 21px;
                         border-bottom : $yellow solid 4px;
                         border-radius : 3px;
+                    }
+                }
+
+                .bars {
+                    &:hover {
+
+                        border-bottom: transparent solid 4px;
+
                     }
                 }
 

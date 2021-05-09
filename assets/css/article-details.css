@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 .header {
   background-color: #000;
   width: 100%;
@@ -14,6 +15,10 @@
   padding-bottom: 21px;
   border-bottom: #ffb51f solid 4px;
   border-radius: 3px;
+}
+
+.header nav .menu .item .bars:hover {
+  border-bottom: transparent solid 4px;
 }
 
 .header nav .menu .item i {
@@ -55,5 +60,189 @@ footer li {
   font-weight: lighter;
   padding-left: 7px;
   color: #818a91;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.article-banner {
+  position: relative;
+  background-image: url("../img/Article Detail/bg_Article_Detail.png");
+  height: 350px;
+  background-size: cover;
+}
+
+.article-banner .article-breadcrumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.article-banner .article-breadcrumb .breadcrumb {
+  margin: auto;
+}
+
+.article-banner .article-breadcrumb .breadcrumb-item {
+  color: #ffffff;
+}
+
+.article-banner .article-breadcrumb .breadcrumb-item a {
+  color: #ffb51f;
+}
+
+.author-detail {
+  margin: auto;
+  width: 60%;
+}
+
+.author-detail .article-name h3 {
+  font-size: 43px;
+}
+
+.author-detail .author-name span {
+  color: #ffb51f;
+}
+
+.author-detail .article-category p span {
+  border: 1px solid #ffb51f;
+  padding: 7px 13px;
+  border-radius: 30px;
+  font-size: 10px;
+  color: #ffb51f;
+}
+
+.article-text {
+  margin: auto;
+  width: 60%;
+}
+
+.article-text p {
+  text-align: justify;
+}
+
+.line-separator {
+  background-color: #ffb51f;
+  height: 5px;
+  width: 40px;
+  margin: auto;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.share-article .socialmedia img {
+  width: 60px;
+}
+
+hr {
+  height: 2px;
+  background-color: #ffb51f;
+  border: none;
+  width: 60%;
+  margin: auto;
+}
+
+.get-inspired .other-articles {
+  display: flex;
+  justify-content: center;
+}
+
+.get-inspired .other-articles .card {
+  padding: 0;
+  border: none;
+}
+
+.get-inspired .other-articles .card .row {
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.get-inspired .other-articles .card .row img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.get-inspired .other-articles .card .col-md-3 {
+  width: 23%;
+}
+
+.get-inspired .other-articles .card .card-body span {
+  border: 1px solid #ffb51f;
+  padding: 7px 13px;
+  border-radius: 30px;
+  font-size: 10px;
+  color: #ffb51f;
+}
+
+.yellow-border {
+  border: 1px solid #ffb51f;
+  width: 60%;
+}
+
+.comments-count {
+  width: 60%;
+  margin: auto;
+}
+
+.article-comments {
+  width: 60%;
+  margin: auto;
+}
+
+.article-comments .publish-date {
+  color: #818a91;
+}
+
+.article-comments .replyandlikes .like-btn .like-counter {
+  color: #ffb51f;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.article-comments .replyandlikes .like-btn .like-counter #clicks {
+  color: black;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+.article-comments .replyandlikes .like-btn .likes-counter {
+  color: #ffb51f;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.article-comments .replyandlikes .like-btn .likes-counter #likeclicks {
+  color: black;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+.post-comments {
+  width: 60%;
+}
+
+.post-comments input {
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  padding: 10px;
+}
+
+.post-comments textarea {
+  border: 1px solid rgba(128, 128, 128, 0.4);
+}
+
+.post-comments label {
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=article-details.css.map */

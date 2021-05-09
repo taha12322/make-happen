@@ -9,7 +9,7 @@ body {
 
 .article-banner {
     position: relative;
-    background-image: url('../img/article list/bg_article_list.png');
+    background-image: url('../img/my profile/bg_my_profile.png');
     height: 350px;
     background-size: cover;
     .article-heading {
@@ -38,18 +38,6 @@ body {
     }
 }
 
-.line-separator {
-    background-color: $yellow;
-    height: 5px;
-    width: 40px;
-    margin: auto;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-}
-
 .card {
     padding: 0;
     border: none;
@@ -74,6 +62,11 @@ body {
     }
 }
 
+.border-yellow {
+    border: 1px solid $yellow;
+    height: fit-content;
+}
+
 .yellow-border {
     border: 1px solid $yellow;
     width: 60%;
@@ -87,5 +80,29 @@ body {
         color: $white;
         background: $yellow;
         border: none;
+    }
+}
+
+.text-grey {
+    color: $grey;
+}
+
+.profile-details {
+    .profile-img img {
+        width: 200px;
+        margin: auto;
+    }
+    .likeandviews {
+        span {
+            margin-top: 10px;
+            img {
+                width: 14px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .followme img {
+        width: 30px;
+        margin-right: 10px;
     }
 }
