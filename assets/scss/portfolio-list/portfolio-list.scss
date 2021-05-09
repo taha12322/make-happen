@@ -1,3 +1,174 @@
 @import "../colors";
 @import "../header";
 @import "../footer";
+@import "../slider";
+@import "../copyRight";
+@import "../shaps";
+
+
+
+
+.banner-container {
+    position               : relative;
+    background-image       : url(../img/PortfolioList/bgPortfolioList.png);
+    background-size        : cover;
+    background-repeat      : no-repeat;
+    display                : flex;
+    justify-content        : center;
+    align-items            : center;
+    height                 : 60vh;
+
+    .banner-text {
+        margin-top: -30px;
+        color     : $white;
+        text-align: center;
+
+        h1 {
+            font-size  : 60px;
+            font-weight: 900;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .page-address {
+        width           : 100%;
+        height          : 45px;
+        background-color: rgba(#000, 0.7);
+        position        : absolute;
+        bottom          : 0;
+        display         : flex;
+        justify-content : start;
+        align-items     : center;
+
+        .container {
+            color    : $white;
+            font-size: 16px;
+
+            a {
+                color          : $white;
+                margin-right   : 5px;
+                margin-left    : 5px;
+                text-decoration: none;
+
+                &:nth-child(1) {
+                    margin-left: 0px;
+                }
+            }
+
+            .path {
+                color: $yellow;
+            }
+        }
+    }
+
+}
+
+.works-nav{
+
+    h1{
+        text-align: center;
+        color: $black;
+        font-weight: 700;
+    }
+    .rectangle{
+        @extend %rectangle-mini;
+    }
+
+    .works-cards{
+        justify-content: space-evenly;
+    }
+    .nav--pagination{
+        display: flex !important;
+        justify-content: center !important;
+
+        a{
+            color: $yellow;
+            border: $yellow solid 1px;
+        }
+        .active-item{
+            color: $white;
+            background-color: $yellow;
+        }
+    }
+}
+
+
+.box{
+    background-color: $yellow;
+    .title{
+        text-align: center;
+    }
+    .rectangl{
+        @extend %rectangle-mini-w;
+    }
+    input{
+        background-color: $yellow;
+        color: $white;
+        border: $white solid 1px;
+        padding: 0.5rem 1rem;
+        border-radius: 2px;
+        width: 75%;
+    }
+    input::placeholder{
+        color: $white;
+    }
+    textarea{
+        background-color: $yellow;
+        color: $white;
+        border: $white solid 1px;
+        padding: 0.5rem 1rem;
+        border-radius: 2px;
+    }
+    label{
+        font-weight: 700;
+        font-size: medium;
+    }
+    .nav--inputs{
+        padding-left: 17rem;
+    }
+    .send-btn{
+        color: $white;
+        background-color: $black;
+        border-radius: 1px;
+        padding: 0.75rem 1.75rem;
+    }
+    .send-btn:hover{
+        color: $white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
