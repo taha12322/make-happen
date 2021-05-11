@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="../assets/css/portfolio-detail.css">
+    <title>Portfolio Detail</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header d-flex align-items-center">
+        <nav class="container  d-flex align-items-center justify-content-between">
+            <div class="logo">
+                <a href="#"><img src="../assets/img/index/Group 45.png" alt=""></a>
+            </div>
+            <div class="menu d-flex justify-content-between align-items-center ">
+                <div class="item  d-md-none">
+                    <a class="bars" onclick="openNav()"> <img src=" ../assets/img/bars.png" alt=""></a>
+                </div>
+                <div class="item m-3 d-none d-md-inline">
+                    <a href="#">home</a>
+                </div>
+                <div class="item m-3 d-none d-md-inline">
+                    <a href="#">about us</a>
+                </div>
+                <div class="item m-3 d-none d-md-inline">
+                    <a href="#">portfolio <i class="material-icons">&#xe5c5;</i></a>
+
+                </div>
+                <div class="item m-3 d-none d-md-inline ">
+                    <a href="#">article <i class="material-icons">&#xe5c5;</i></a>
+                </div>
+                <div class="item m-3 d-none d-md-inline">
+                    <a href="#">pages <i class="material-icons">&#xe5c5;</i></a>
+                </div>
+                <div class="item m-3 d-none d-md-inline">
+                    <a href="#">contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- banner  -->
+    <div class="banner-container   ">
+        <div class="banner-text">
+            <h1>Portfolio Detail</h1>
+            <p>Nulla vitae elit libero, a pharetra
+                <br>
+                augue mollis interdum.
+            </p>
+        </div>
+        <div class="page-address  ">
+            <div class="container ">
+                <a class="path" href="#">Home</a><span>/</span> <a class="path" href="#">Portfolio List</a>
+                <span>/</span> <a href="#">Portfolio Detail</a>
+            </div>
+        </div>
+    </div>
+    <!-- slideshow-caption -->
+    <div class="container">
+        <div class="row d-flex align-items-lg-start align-items-md-center">
+            <div class="col-lg-6 col-md-6  col-sm-12">
+                <section id="slideshow ">
+                    <!-- Container for the image gallery -->
+                    <div class=" slideshow container pt-5 pb-5">
+
+                        <!-- Full-width images with number text -->
+                        <div class="mySlides">
+
+                            <img src="../assets/img/homepage/kaizen-nguy-n-4.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides ">
+
+                            <img src="../assets/img/homepage/kaizen-nguy-n-3.png" style="width:100%">
+                        </div>
+                        <div class="mySlides ">
+
+                            <img src="../assets/img/homepage/kaizen-nguy-n-2.png" style="width:100%">
+                        </div>
+                        <!-- Thumbnail images -->
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-1 text-center">
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            </div>
+                            <div class="col-3">
+                                <img class="demo cursor" src="../assets/img/homepage/kaizen-nguy-n-4.png"
+                                    style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                            </div>
+                            <div class="col-3">
+                                <img class="demo cursor" src="../assets/img/homepage/kaizen-nguy-n-3.png"
+                                    style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                            </div>
+                            <div class="col-3">
+                                <img class="demo cursor" src="../assets/img/homepage/kaizen-nguy-n-2.png"
+                                    style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                            </div>
+                            <div class="col-1 text-center">
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <!-- section caption -->
+                <section class="section-caption container  pt-5 pb-5 text-start ">
+                    <div class="row">
+                        <div class=" col-12  col-md-12 ">
+                            <div class="row  flex-row-reverse justify-content-end">
+                                <div class=" col-md-12 ">
+                                    <h1 class="title font-weight-bolder"><strong>Portfolio Detail</strong></h1>
+                                </div>
+                                <div class=" col-md-12  ">
+                                    <div class=" rectangle-nr "></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-12  col-md-12 pt-5 text-lg-start">
+                            <p class="text-dis   ">
+                                <strong class="h1">M</strong>aecenas faucibus neque nec purus viverra molestie. Sed
+                                euismod
+                                eleifend
+                                faucibus. Maecenas viverra massa
+                                quis felis finibus posuere. Cras ut luctus quam. Vestibulum eget lectus id nulla
+                                tincidunt
+                                posuere.
+                            </p>
+                            <p><strong>Client :</strong> <span>Asia Telecom.</span></p>
+                            <p><strong>Date :</strong> <span>16 September 2017</span></p>
+                            <div class=" d-flex flex-wrap align-items-baseline">
+                                <p class="pr-1"><strong>Category : </strong></p>
+                                <div class=" d-flex flex-wrap ">
+                                    <a class="cat rounded-pill bg-warning text-nowrap">Branding</a>
+                                    <a class="cat rounded-pill bg-warning text-nowrap">Logo Design</a>
+                                    <a class="cat rounded-pill bg-warning text-nowrap">Logo</a>
+                                    <a class="cat rounded-pill bg-warning text-nowrap">Poster Design</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="line"></div>
+    </div>
+
+
+    <!-- related works -->
+    <section class="pt-4 pb-2">
+        <div class="container">
+            <div class="row  ">
+                <div class=" col-12  col-md-12 ">
+                    <div class="mr-30 row justify-content-end pb-5 ">
+                        <div class=" col-md-12  text-center">
+                            <h1 class="title font-weight-bolder">Related Works</h1>
+                        </div>
+                        <div class=" col-md-12 ">
+                            <div class="rectangle-nr mx-auto "></div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12  col-md-12    ">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-4">
+                            <div class="card work">
+                                <div class="card-body p-0">
+                                    <div class="card-imgage w-100 "> <img class="w-100"
+                                            src="../assets/img/homepage/kaizen-nguy-n-3.png" alt=""></div>
+                                    <div class="card-desc  p-3">
+                                        <div class="row ">
+                                            <div class=" col-8 ">
+                                                <h6>Photography</h6>
+                                                <p>GreenPL</p>
+                                            </div>
+                                            <div class=" col-4 d-flex align-items-center justify-content-start ">
+                                                <button>View</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4">
+                            <div class="card work">
+                                <div class="card-body p-0">
+                                    <div class="card-imgage w-100 "> <img class="w-100"
+                                            src="../assets/img/homepage/kaizen-nguy-n-3.png" alt=""></div>
+                                    <div class="card-desc  p-3">
+                                        <div class="row ">
+                                            <div class=" col-8 ">
+                                                <h6>Photography</h6>
+                                                <p>GreenPL</p>
+                                            </div>
+                                            <div class=" col-4 d-flex align-items-center justify-content-start ">
+                                                <button>View</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4">
+                            <div class="card work">
+                                <div class="card-body p-0">
+                                    <div class="card-imgage w-100 "> <img class="w-100"
+                                            src="../assets/img/homepage/kaizen-nguy-n-3.png" alt=""></div>
+                                    <div class="card-desc  p-3">
+                                        <div class="row ">
+                                            <div class=" col-8 ">
+                                                <h6>Photography</h6>
+                                                <p>GreenPL</p>
+                                            </div>
+                                            <div class=" col-4 d-flex align-items-center justify-content-start ">
+                                                <button>View</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="boxb ">
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div
+                        class="col-md-5  col-sm-12 text-md-start text-sm-center text-center d-flex flex-column justify-content-sm-between pt-3 pb-3">
+                        <a href="#"><img src="../assets/img/index/Group 45.png"></a>
+
+                        <p class="text-white pt-sm-3">With supporting text below as a natural lead-in to
+                            additional content.
+                            Lorem ipsum and
+                            something else.
+                            <br>
+                        </p>
+                        <p class="text-white"> Special Region of Yogyakarta
+                            <br> Indonesia
+                            <br>
+
+                            (027) 333333
+                            <br>
+                        </p>
+                    </div>
+                    <div class="col-md-7 justify-content-sm-between col-sm-12 text-md-start text-sm-center text-center">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12  pt-sm-3 pt-3 pb-3">
+                                <ul class="footer-items">
+                                    <li><a href="#"> Home </a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li class="sub"><a class="" href="#">Portfolio List</a></li>
+                                    <li class="sub"><a href="#">Portfolio Detail</a></li>
+                                    <li><a href="#">Article</a></li>
+                                    <li class="sub"><a href="#">Article List</a></li>
+                                    <li class="sub"><a href="#">Article Detail</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-12  pt-sm-3 pt-3 pb-3">
+                                <ul class="footer-items">
+                                    <li><a href="#"> Pages </a></li>
+                                    <li class="sub"><a href="#">Login</a></li>
+                                    <li class="sub"><a href="#">Register</a></li>
+                                    <li class="sub"><a href="#">My Profile</a></li>
+                                    <li class="sub"><a href="#">Pricing</a></li>
+                                    <li class="sub"><a href="#">FAQ</a></li>
+                                    <li class="sub"><a href="#">404 Page</a></li>
+                                    <li><a href="#"> Contact </a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-12 pt-sm-3 pt-3 pb-3">
+                                <h4 class="text-white">Follow us on :</h4>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a href="#" class="a-footer-img p-2"><img src="../assets/img/index/medium.png"
+                                            alt=""></a>
+                                    <a href="#" class="a-footer-img  p-2"><img src="../assets/img/index/twitter.png"
+                                            alt=""></a>
+                                    <a href="#" class="a-footer-img  p-2"><img src="../assets/img/index/linkedin.png"
+                                            alt=""></a>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a href="#" class="a-footer-img  p-2"><img src="../assets/img/index/dribbble.png"
+                                            alt=""></a>
+                                    <a href="#" class="a-footer-img  p-2"><img
+                                            src="../assets/img/index/facebook-square.png" alt=""></a>
+                                    <a href="#" class="a-footer-img  p-2"><img src="../assets/img/index/instagram.png"
+                                            alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- copy-right -->
+    <div class="copy_right d-flex align-items-center justify-content-center">
+        <p>2018 Makaraya . All rights reserved .</p>
+    </div>
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/portfolio-detail.js"></script>
+</body>
+
+</html>
