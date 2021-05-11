@@ -6,8 +6,11 @@
 @import "../banner";
 @import "../shaps";
 
-.banner-container {
+.copy_right {
+    @extend %copy_right;
+}
 
+.banner-container {
     background-image: url(../img/homepage/kaizen-nguy-n-4.png);
 }
 
@@ -22,6 +25,11 @@
     margin-top     : 10px;
     text-decoration: none;
     color          : $black;
+
+    &:hover {
+        cursor: default;
+        color : $black;
+    }
 }
 
 //shapes

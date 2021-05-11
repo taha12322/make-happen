@@ -1,4 +1,5 @@
 @import "../colors";
+@import "../mobile-menu";
 @import "../header";
 @import "../footer";
 @import "../slider";
@@ -9,14 +10,14 @@
 
 
 .banner-container {
-    position               : relative;
-    background-image       : url(../img/PortfolioList/bgPortfolioList.png);
-    background-size        : cover;
-    background-repeat      : no-repeat;
-    display                : flex;
-    justify-content        : center;
-    align-items            : center;
-    height                 : 60vh;
+    position         : relative;
+    background-image : url(../img/PortfolioList/bgPortfolioList.png);
+    background-size  : cover;
+    background-repeat: no-repeat;
+    display          : flex;
+    justify-content  : center;
+    align-items      : center;
+    height           : 60vh;
 
     .banner-text {
         margin-top: -30px;
@@ -66,109 +67,88 @@
 
 }
 
-.works-nav{
+.works-nav {
 
-    h1{
-        text-align: center;
-        color: $black;
+    h1 {
+        text-align : center;
+        color      : $black;
         font-weight: 700;
     }
-    .rectangle{
+
+    .rectangle {
         @extend %rectangle-mini;
     }
 
-    .works-cards{
+    .works-cards {
         justify-content: space-evenly;
     }
-    .nav--pagination{
-        display: flex !important;
+
+    .nav--pagination {
+        display        : flex !important;
         justify-content: center !important;
 
-        a{
-            color: $yellow;
+        a {
+            color : $yellow;
             border: $yellow solid 1px;
         }
-        .active-item{
-            color: $white;
+
+        .active-item {
+            color           : $white;
             background-color: $yellow;
         }
     }
 }
 
 
-.box{
+.box {
     background-color: $yellow;
-    .title{
+
+    .title {
         text-align: center;
     }
-    .rectangl{
+
+    .rectangl {
         @extend %rectangle-mini-w;
     }
-    input{
+
+    input {
         background-color: $yellow;
-        color: $white;
-        border: $white solid 1px;
-        padding: 0.5rem 1rem;
-        border-radius: 2px;
-        width: 75%;
+        color           : $white;
+        border          : $white solid 1px;
+        padding         : 0.5rem 1rem;
+        border-radius   : 2px;
+        width           : 75%;
     }
-    input::placeholder{
+
+    input::placeholder {
         color: $white;
     }
-    textarea{
+
+    textarea {
         background-color: $yellow;
-        color: $white;
-        border: $white solid 1px;
-        padding: 0.5rem 1rem;
-        border-radius: 2px;
+        color           : $white;
+        border          : $white solid 1px;
+        padding         : 0.5rem 1rem;
+        border-radius   : 2px;
     }
-    label{
+
+    label {
         font-weight: 700;
-        font-size: medium;
+        font-size  : medium;
     }
-    .nav--inputs{
+
+    .nav--inputs {
         padding-left: 17rem;
     }
-    .send-btn{
-        color: $white;
+
+    .send-btn {
+        color           : $white;
         background-color: $black;
-        border-radius: 1px;
-        padding: 0.75rem 1.75rem;
+        border-radius   : 1px;
+        padding         : 0.75rem 1.75rem;
     }
-    .send-btn:hover{
+
+    .send-btn:hover {
         color: $white;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

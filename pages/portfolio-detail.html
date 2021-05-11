@@ -17,41 +17,89 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
-
     <link rel="stylesheet" href="../assets/css/portfolio-detail.css">
-    <title>Portfolio Detail</title>
+    <title>Portfolio Detail...faeze</title>
 </head>
 
+
 <body>
+    <!-- The mobile-menu -->
+    <div id="myNav" class="mobile-menu">
+
+        <!-- Button to close the mobile-menu navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- mobile-menu content -->
+        <div class="mobile-menu-content mx-auto">
+            <a id="" class="item" href="./home.html">HOME</a>
+            <a href="./about-us.html">ABOUT US</a>
+            <p id="portfolio">PORTFOLIO <i class="material-icons">&#xe5c5;</i></p>
+            <div id="portfolio-slid" class="disp-n">
+                <a href="./portfolio-list.html">Portfolio List</a>
+                <a href="./portfolio-detail.html">Portfolio Detail</a>
+            </div>
+            <p id="article">ARTICLE <i class="material-icons">&#xe5c5;</i></p>
+            <div id="article-slid" class="disp-n">
+                <a href="./article-list.html">Article List</a>
+                <a href="./article-details.html">Article Detail</a>
+            </div>
+            <p id="pages">PAGES<i class="material-icons">&#xe5c5;</i></p>
+            <div id="pages-slid" class="disp-n">
+                <a href="./login.html">Login</a>
+                <a href="./sign-up.html">Register </a>
+                <a href="./my-profile.html">My Profile </a>
+                <a href="./pricing.html">Pricing </a>
+                <a href="./FAQ.html">FAQ </a>
+                <a href="./404.html">404 Page </a>
+            </div>
+            <a class="mb-30px" href="./contact-us.html">CONTACT</a>
+        </div>
+    </div>
     <!-- header -->
     <header class="header d-flex align-items-center">
         <nav class="container  d-flex align-items-center justify-content-between">
             <div class="logo">
-                <a href="#"><img src="../assets/img/index/Group 45.png" alt=""></a>
+                <a href="./home.html"><img src="../assets/img/index/Group 45.png" alt=""></a>
             </div>
             <div class="menu d-flex justify-content-between align-items-center ">
                 <div class="item  d-md-none">
-                    <a class="bars" onclick="openNav()"> <img src=" ../assets/img/bars.png" alt=""></a>
+                    <a class="item-link bars" onclick="openNav()"> <img src=" ../assets/img/bars.png" alt=""></a>
+                </div>
+                <div class=" item m-3 d-none d-md-inline">
+                    <a href="./home.html" class="item-link" href="#">home</a>
                 </div>
                 <div class="item m-3 d-none d-md-inline">
-                    <a href="#">home</a>
+                    <a href="./about-us.html" class="item-link" href="#">about us</a>
                 </div>
-                <div class="item m-3 d-none d-md-inline">
-                    <a href="#">about us</a>
-                </div>
-                <div class="item m-3 d-none d-md-inline">
-                    <a href="#">portfolio <i class="material-icons">&#xe5c5;</i></a>
+                <div class="item m-3 d-none d-md-inline dropdown">
+                    <a class="item-link dropdown-toggle" data-toggle="dropdown" href="">portfolio
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./portfolio-list.html">Portfolio List</a>
+                        <a class="dropdown-item" href="./portfolio-detail.html">Portfolio Detail</a>
+                    </div>
 
                 </div>
-                <div class="item m-3 d-none d-md-inline ">
-                    <a href="#">article <i class="material-icons">&#xe5c5;</i></a>
+                <div class="item m-3 d-none d-md-inline dropdown">
+                    <a class="item-link dropdown-toggle" data-toggle="dropdown" href="">article </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./article-list.html">Article List</a>
+                        <a class="dropdown-item" href="./article-details.html">Article Detail</a>
+                    </div>
                 </div>
                 <div class="item m-3 d-none d-md-inline">
-                    <a href="#">pages <i class="material-icons">&#xe5c5;</i></a>
+                    <a class="item-link dropdown-toggle" data-toggle="dropdown" href="">pages </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./login.html">Login</a>
+                        <a class="dropdown-item" href="./sign-up.html">Register </a>
+                        <a class="dropdown-item" href="./my-profile.html">My Profile </a>
+                        <a class="dropdown-item" href="./pricing.html">Pricing </a>
+                        <a class="dropdown-item" href="./FAQ.html">FAQ </a>
+                        <a class="dropdown-item" href="./404.html">404 Page </a>
+                    </div>
                 </div>
                 <div class="item m-3 d-none d-md-inline">
-                    <a href="#">contact</a>
+                    <a class="item-link" href="./contact-us.html">contact</a>
                 </div>
             </div>
         </nav>
@@ -67,8 +115,9 @@
         </div>
         <div class="page-address  ">
             <div class="container ">
-                <a class="path" href="#">Home</a><span>/</span> <a class="path" href="#">Portfolio List</a>
-                <span>/</span> <a href="#">Portfolio Detail</a>
+                <a class="path" href="./home.html">Home</a><span>/</span> <a class="path"
+                    href="./portfolio-list.html">Portfolio List</a>
+                <span>/</span> <a href="portfolio-detail.html">Portfolio Detail</a>
             </div>
         </div>
     </div>
@@ -165,8 +214,6 @@
     <div class="container">
         <div class="line"></div>
     </div>
-
-
     <!-- related works -->
     <section class="pt-4 pb-2">
         <div class="container">
@@ -246,7 +293,6 @@
                 </div>
             </div>
     </section>
-
     <!-- footer -->
     <footer>
         <div class="boxb ">
@@ -274,26 +320,32 @@
                         <div class="row">
                             <div class="col-md-4 col-sm-12  pt-sm-3 pt-3 pb-3">
                                 <ul class="footer-items">
-                                    <li><a href="#"> Home </a></li>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Portfolio</a></li>
-                                    <li class="sub"><a class="" href="#">Portfolio List</a></li>
-                                    <li class="sub"><a href="#">Portfolio Detail</a></li>
-                                    <li><a href="#">Article</a></li>
-                                    <li class="sub"><a href="#">Article List</a></li>
-                                    <li class="sub"><a href="#">Article Detail</a></li>
+                                    <li><a href="./home.html"> Home </a></li>
+                                    <li><a href="./about-us.html">About Us</a></li>
+                                    <li>
+                                        <p href="">Portfolio</p>
+                                    </li>
+                                    <li class="sub"><a class="" href="./portfolio-list.html">Portfolio List</a></li>
+                                    <li class="sub"><a href="./portfolio-detail.html">Portfolio Detail</a></li>
+                                    <li>
+                                        <p href="">Article</p>
+                                    </li>
+                                    <li class="sub"><a href="./article-list.html">Article List</a></li>
+                                    <li class="sub"><a href="./article-details.html">Article Detail</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-4 col-sm-12  pt-sm-3 pt-3 pb-3">
                                 <ul class="footer-items">
-                                    <li><a href="#"> Pages </a></li>
-                                    <li class="sub"><a href="#">Login</a></li>
-                                    <li class="sub"><a href="#">Register</a></li>
-                                    <li class="sub"><a href="#">My Profile</a></li>
-                                    <li class="sub"><a href="#">Pricing</a></li>
-                                    <li class="sub"><a href="#">FAQ</a></li>
-                                    <li class="sub"><a href="#">404 Page</a></li>
-                                    <li><a href="#"> Contact </a></li>
+                                    <li>
+                                        <p href=""> Pages </p>
+                                    </li>
+                                    <li class="sub"><a href="./login.html">Login</a></li>
+                                    <li class="sub"><a href="./sign-up.html">Register</a></li>
+                                    <li class="sub"><a href="./my-profile.html">My Profile</a></li>
+                                    <li class="sub"><a href="./pricing.html">Pricing</a></li>
+                                    <li class="sub"><a href="./FAQ.html">FAQ</a></li>
+                                    <li class="sub"><a href="./404.html">404 Page</a></li>
+                                    <li><a href="./contact-us.html"> Contact </a></li>
                                 </ul>
                             </div>
                             <div class="col-md-4 col-sm-12 pt-sm-3 pt-3 pb-3">
@@ -328,8 +380,9 @@
     <script src="../assets/js/jquery-3.6.0.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/owl.carousel.min.js"></script>
     <script src="../assets/js/portfolio-detail.js"></script>
+    <script src="../assets/js/main-script.js"></script>
+
 </body>
 
 </html>

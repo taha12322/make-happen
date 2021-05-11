@@ -1,12 +1,5 @@
 $(document).ready(function () {
-    // mobile menu
-    openNav = () => {
-        document.getElementById("myNav").style.height = "100%";
-    }
 
-    closeNav = () => {
-        document.getElementById("myNav").style.height = "0%";
-    }
     //owl-carousel-1
     $('.owl-carousel-1').owlCarousel({
         margin: 15,

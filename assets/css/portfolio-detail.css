@@ -6,36 +6,53 @@
   top: 0;
   left: 0;
   background-color: black;
-  overflow-y: hidden;
+  overflow-y: auto;
   transition: 0.5s;
 }
 
 .mobile-menu-content {
   position: relative;
-  top: 25%;
-  width: 100%;
+  top: 10%;
+  width: 50%;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .mobile-menu a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 20px;
   color: #818181;
   display: block;
   transition: 0.3s;
 }
 
+.mobile-menu p {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  margin-bottom: 0 !important;
+  cursor: pointer;
+}
+
+.mobile-menu .disp-n {
+  display: none;
+}
+
 .mobile-menu a:hover,
-.mobile-menu a:focus {
+.mobile-menu a:focus,
+.mobile-menu p:hover,
+.mobile-menu p:focus {
   color: #f1f1f1;
 }
 
 .mobile-menu .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
+  top: -20px;
+  right: 15px;
   font-size: 60px;
 }
 
@@ -44,7 +61,7 @@
     overflow-y: auto;
   }
   .mobile-menu a {
-    font-size: 20px;
+    font-size: 15px;
   }
   .mobile-menu .closebtn {
     font-size: 40px;
@@ -59,13 +76,12 @@
   height: 70px;
 }
 
-.header nav .menu .item a {
-  color: #fff;
+.header nav .menu .item .item-link {
   text-decoration: none;
-  border-bottom: transparent solid 4px;
+  color: #ffffff;
 }
 
-.header nav .menu .item a:hover {
+.header nav .menu .item .item-link:hover {
   padding-bottom: 21px;
   border-bottom: #ffb51f solid 4px;
   border-radius: 3px;
@@ -75,9 +91,23 @@
   border-bottom: transparent solid 4px;
 }
 
-.header nav .menu .item i {
-  color: #fff;
-  font-size: 1rem;
+.header nav .menu .item .dropdown-menu {
+  background-color: black;
+  padding: 0;
+}
+
+.header nav .menu .item .dropdown-menu .dropdown-item {
+  background-color: black;
+  color: white;
+  padding: 10px 0 10px 25px;
+}
+
+.header nav .menu .item .dropdown-menu .dropdown-item:hover {
+  background-color: #1a1b1d !important;
+}
+
+.header nav .menu .item .dropdown-menu .dropdown-item:focus {
+  background-color: #1a1b1d !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -108,6 +138,12 @@ footer li {
 .footer-items a {
   text-decoration: none;
   color: #fff;
+}
+
+.footer-items p {
+  color: #fff;
+  margin-bottom: 0;
+  cursor: default;
 }
 
 .sub {
@@ -218,6 +254,11 @@ footer li {
   margin-right: 10px;
   margin-top: 10px;
   text-decoration: none;
+  color: #0d0908;
+}
+
+.cat:hover {
+  cursor: default;
   color: #0d0908;
 }
 
