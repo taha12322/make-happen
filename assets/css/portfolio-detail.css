@@ -1,3 +1,58 @@
+.mobile-menu {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.mobile-menu-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.mobile-menu a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.mobile-menu a:hover,
+.mobile-menu a:focus {
+  color: #f1f1f1;
+}
+
+.mobile-menu .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .mobile-menu {
+    overflow-y: auto;
+  }
+  .mobile-menu a {
+    font-size: 20px;
+  }
+  .mobile-menu .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
 .header {
   background-color: #000;
   width: 100%;
@@ -59,5 +114,177 @@ footer li {
   font-weight: lighter;
   padding-left: 7px;
   color: #818a91;
+}
+
+.copy_right {
+  background-color: #ffb51f;
+  height: 50px;
+  width: 100%;
+}
+
+.copy_right p {
+  font-family: Roboto;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.banner-container {
+  position: relative;
+  background-image: url(../img/pricing/bg_pricing.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.banner-container .banner-text {
+  margin-top: -30px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.banner-container .banner-text h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.banner-container .banner-text p {
+  font-size: 20px;
+}
+
+.banner-container .page-address {
+  width: 100%;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.banner-container .page-address .container {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.banner-container .page-address .container a {
+  color: #ffffff;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.banner-container .page-address .container a:nth-child(1) {
+  margin-left: 0px;
+}
+
+.banner-container .page-address .container .path {
+  color: #ffb51f;
+}
+
+.rectangle-nr {
+  width: 70px;
+  height: 3px;
+  background-color: #ffb51f;
+  margin-left: 0;
+}
+
+.line {
+  width: 60%;
+  height: 2px;
+  background-color: #ffb51f;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.banner-container {
+  background-image: url(../img/homepage/kaizen-nguy-n-4.png);
+}
+
+.pr-1 {
+  padding-right: 10px;
+}
+
+.cat {
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #0d0908;
+}
+
+.card.work {
+  margin-bottom: 30px;
+}
+
+.card.work .card-desc {
+  border: 1px solid #ffb51f;
+}
+
+.card.work .card-desc h6 {
+  color: #0d0908;
+  margin: 0;
+}
+
+.card.work .card-desc p {
+  color: #818a91;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+.card.work button {
+  background-color: #ffb51f;
+  color: #ffffff;
+  height: 40px;
+  width: 70px;
+  border: none;
+  text-align: center;
+  margin-left: auto;
+}
+
+.slideshow {
+  /* Hide the images by default */
+  /* Next & previous buttons */
+}
+
+.slideshow .mySlides {
+  display: none;
+  padding-bottom: 30px;
+}
+
+.slideshow .prev,
+.slideshow .next {
+  cursor: pointer;
+  color: #ffb51f;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }
 /*# sourceMappingURL=portfolio-detail.css.map */
