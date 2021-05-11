@@ -10,6 +10,10 @@
     @extend %rectangle-r;
 }
 
+.copy_right {
+    @extend %copy_right;
+}
+
 .accordion-container {
     .accordion {
         background-color: #eee;
