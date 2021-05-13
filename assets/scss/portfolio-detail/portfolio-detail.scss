@@ -1,3 +1,115 @@
 @import "../colors";
+@import "../mobile-menu";
 @import "../header";
 @import "../footer";
+@import "../copyRight";
+@import "../banner";
+@import "../shaps";
+
+.copy_right {
+    @extend %copy_right;
+}
+
+.banner-container {
+    background-image: url(../img/homepage/kaizen-nguy-n-4.png);
+}
+
+.pr-1 {
+    padding-right: 10px;
+}
+
+//category
+.cat {
+    padding        : 10px 20px;
+    margin-right   : 10px;
+    margin-top     : 10px;
+    text-decoration: none;
+    color          : $black;
+
+    &:hover {
+        cursor: default;
+        color : $black;
+    }
+}
+
+//shapes
+.line {
+    @extend %line;
+}
+
+.rectangle-nr {
+    @extend %rectangle-nr;
+}
+
+//work
+.card.work {
+    margin-bottom: 30px;
+
+    .card-desc {
+        border: 1px solid $yellow;
+
+        h6 {
+            color : $black;
+            margin: 0;
+        }
+
+        p {
+            color    : $grey;
+            padding  : 0;
+            margin   : 0;
+            font-size: 12px;
+        }
+    }
+
+    button {
+        background-color: $yellow;
+        color           : $white;
+        height          : 40px;
+        width           : 70px;
+        border          : none;
+        text-align      : center;
+        margin-left     : auto;
+
+    }
+
+
+}
+
+//slideshow
+.slideshow {
+
+    /* Hide the images by default */
+    .mySlides {
+        display       : none;
+        padding-bottom: 30px;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor             : pointer;
+        color              : $yellow;
+        font-weight        : bold;
+        font-size          : 30px;
+        border-radius      : 0 3px 3px 0;
+        user-select        : none;
+        -webkit-user-select: none;
+        text-decoration    : none;
+    }
+
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
