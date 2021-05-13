@@ -6,28 +6,77 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-  <link rel="stylesheet" href="./assets/css/index.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="../assets/css/owl.theme.green.min.css">
+  <link rel="stylesheet" href="../assets/css/home.css">
   <title>make happen</title>
 </head>
 
 <body>
 
-  <header class="header">
-    <ul class="contaner">
-      <nav class="col-7">
-        <li><a href="#"><img src="./assets/img/index/Group 45.png" alt=""></a></li>
+  <!-- The mobile-menu -->
+<div id="myNav" class="mobile-menu">
+
+  <!-- Button to close the mobile-menu navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- mobile-menu content -->
+  <div class="mobile-menu-content">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+  </div>
+
+</div>
+
+<body>
+  <!-- header -->
+  <header class="header d-flex align-items-center">
+      <nav class="container  d-flex align-items-center justify-content-between">
+          <div class="logo">
+              <a href="#"><img src="../assets/img/index/Group 45.png" alt=""></a>
+          </div>
+          <div class="menu d-flex justify-content-between align-items-center ">
+              <div class="item  d-md-none">
+                  <a class="bars" onclick="openNav()"> <img src=" ../assets/img/bars.png" alt=""></a>
+              </div>
+              <div class="item m-3 d-none d-md-inline">
+                  <a href="#">home</a>
+              </div>
+              <div class="item m-3 d-none d-md-inline">
+                  <a href="#">about us</a>
+              </div>
+              <div class="item m-3 d-none d-md-inline">
+                  <a href="#">portfolio <i class="material-icons">&#xe5c5;</i></a>
+
+              </div>
+              <div class="item m-3 d-none d-md-inline ">
+                  <a href="#">article <i class="material-icons">&#xe5c5;</i></a>
+              </div>
+              <div class="item m-3 d-none d-md-inline">
+                  <a href="#">pages <i class="material-icons">&#xe5c5;</i></a>
+              </div>
+              <div class="item m-3 d-none d-md-inline">
+                  <a href="#">contact</a>
+              </div>
+          </div>
       </nav>
-      <li><a href="#">home</a></li>
-      <li><a href="#">about us</a></li>
-      <li><a href="#">portfolio <i class="material-icons" style="font-size: 1rem;">&#xe5c5;</i></a></li>
-      <li><a href="#">article <i class="material-icons" style="font-size: 1rem;">&#xe5c5;</i></a></li>
-      <li><a href="#">pages <i class="material-icons" style="font-size: 1rem;">&#xe5c5;</i></a></li>
-      <li><a href="#">contact</a></li>
-    </ul>
-  </header> <!-- slider -->
+  </header>
+  
+  <!-- slider -->
 
   <div class="slideshow-container">
     <div class="mySlides">
@@ -37,7 +86,7 @@
         <p class="discription">Got a lot of idea to be realized? Tell it to the right one to make it happen! <br>
           And fortunately, that right one is just in front of you.</p>
       </div>
-      <img src="./assets/img/index/leone-venter-559377-unsplash.png" style="width:100%">
+      <img src="../assets/img/home/bg_1.png" style="width:100%">
     </div>
     <div class="mySlides">
       <div class="numbertext">2 / 2</div>
@@ -46,11 +95,12 @@
         <p class="discription">Got a lot of idea to be realized? Tell it to the right one to make it happen! <br>
           And fortunately, that right one is just in front of you.</p>
       </div>
-      <img src="./assets/img/index/rawpixel-558599-unsplash.png" style="width:100%">
+      <img src="../assets/img/home/bg_2.png" style="width:100%">
     </div>
     <a class="prev" onclick="plusSlides(-1)" style="color: orange;">&#10094;</a>
     <a class="next" onclick="plusSlides(1)" style="color: orange;">&#10095;</a>
-  </div> <!-- section 2 how are we -->
+  </div>
+   <!-- section 2 how are we -->
   <section>
     <div>
       <h1 class="title">how are we ?</h1>
@@ -337,7 +387,13 @@
       </div>
     </div>
   </footer>
+
   <script src="./assets/js/main.js"></script>
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/owl.carousel.min.js"></script>
+  <script src="../assets/js/pricing.js"></script>
 </body>
 
 </html>
