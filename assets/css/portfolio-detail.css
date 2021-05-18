@@ -7,6 +7,7 @@
   left: 0;
   background-color: black;
   overflow-y: auto;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -24,6 +25,7 @@
   font-size: 20px;
   color: #818181;
   display: block;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -33,6 +35,7 @@
   font-size: 20px;
   color: #818181;
   display: block;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   margin-bottom: 0 !important;
   cursor: pointer;
@@ -91,22 +94,32 @@
   border-bottom: transparent solid 4px;
 }
 
-.header nav .menu .item .dropdown-menu {
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffb51f;
+}
+
+.dropdown-menu {
   background-color: black;
   padding: 0;
 }
 
-.header nav .menu .item .dropdown-menu .dropdown-item {
+.dropdown-menu .dropdown-item {
   background-color: black;
   color: white;
   padding: 10px 0 10px 25px;
 }
 
-.header nav .menu .item .dropdown-menu .dropdown-item:hover {
+.dropdown-menu .dropdown-item:hover {
+  color: #ffb51f;
   background-color: #1a1b1d !important;
 }
 
-.header nav .menu .item .dropdown-menu .dropdown-item:focus {
+.dropdown-menu .dropdown-item:focus {
   background-color: #1a1b1d !important;
 }
 
@@ -173,9 +186,15 @@ footer li {
   background-image: url(../img/pricing/bg_pricing.png);
   background-size: cover;
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 60vh;
 }
 
@@ -200,9 +219,15 @@ footer li {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .banner-container .page-address .container {
@@ -309,7 +334,9 @@ footer li {
   font-weight: bold;
   font-size: 30px;
   border-radius: 0 3px 3px 0;
-  user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
   -webkit-user-select: none;
   text-decoration: none;
 }

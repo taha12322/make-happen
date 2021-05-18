@@ -6,6 +6,7 @@
 @import "../copyRight";
 @import "../banner";
 @import "../shaps";
+@import "../testimony";
 
 
 * {
@@ -36,8 +37,6 @@
             color: white !important;
 
         }
-
-
     }
 
     &.user-tie {
@@ -152,49 +151,6 @@
     @extend %line;
 }
 
-//card testimony
-.card.testimony {
-    border       : none;
-    border-bottom: 1px solid $yellow;
-    border-right : 1px solid $yellow;
-    border-left  : 1px solid $yellow;
-
-    .card-header {
-        height          : 50px;
-        background-color: $black;
-        border          : 1px $black solid;
-    }
-
-    .card-body {
-        height: 285px;
-
-
-        .avatar {
-            .img {}
-        }
-
-        .card-title {
-            h2 {
-                font-size  : 25px;
-                font-weight: 900;
-            }
-
-            h6 {
-                color    : $yellow;
-                font-size: 12px;
-            }
-        }
-
-        .card-caption {
-            p {
-                font-size: 16px;
-                width    : 70%;
-                margin   : auto;
-            }
-
-        }
-    }
-}
 
 // owl carousel
 .owl-carousel {
@@ -211,74 +167,6 @@
     }
 
 }
-
-
-
-.owl-nav .owl-next span,
-.owl-nav .owl-prev span {
-    color    : $yellow;
-    font-size: 97px;
-    margin   : -50px;
-}
-
-.owl-nav {
-    position       : absolute;
-    top            : -94%;
-    width          : 100%;
-    display        : flex;
-    justify-content: space-between;
-}
-
-// .owl-carousel .nav-btn {
-//     height  : 47px;
-//     position: absolute;
-//     width   : 26px;
-//     cursor  : pointer;
-//     top     : 18% !important;
-//     border  : 3px solid red;
-// }
-
-// .owl-carousel .owl-prev.disabled,
-// .owl-carousel .owl-next.disabled {
-//     pointer-events: none;
-//     opacity       : 0.2;
-// }
-
-
-// .owl-carousel .prev-slide {
-//     background: url(../../img/pricing/chevron-left.png) no-repeat scroll 0 0;
-//     left      : -3px;
-// }
-
-// .owl-carousel .next-slide {
-//     background: url(../../img/pricing/chevron-left.png) no-repeat scroll -24px 0px;
-//     right     : -3px;
-//     transform : rotate(180deg);
-// }
-
-// .owl-carousel .prev-slide:hover {
-//     background-position: 0px -3px;
-// }
-
-// .owl-carousel .next-slide:hover {
-//     background-position: -24px -3px;
-//   }
-
-.owl-theme .owl-dots .owl-dot span {
-    width     : 20px;
-    height    : 3px;
-    margin    : 5px 7px;
-    background: #D6D6D6;
-    margin-top: 30px;
-
-}
-
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-    background: $yellow;
-}
-
-.carousel-img {}
 
 
 

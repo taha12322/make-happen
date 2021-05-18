@@ -1,29 +1,60 @@
+document.addEventListener("DOMContentLoaded", function(){
 
-var slideIndex = 1;
-showSlides(slideIndex);
+  // make it as accordion for smaller screens
+  if (window.innerWidth > 992) {
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    document.querySelectorAll('.navbar .nav-item').forEach(function(everyitem){
+      
+      everyitem.addEventListener('mouseover', function(e){
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+        let el_link = this.querySelector('a[data-bs-toggle]');
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("line");
-  if (n > slides.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = slides.length }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+        if(el_link != null){
+          let nextEl = el_link.nextElementSibling;
+          el_link.classList.add('show');
+           nextEl.classList.add('show');
+        }
+        
+      });
+      everyitem.addEventListener('mouseleave', function(e){
+         let el_link = this.querySelector('a[data-bs-toggle]');
+        
+        if(el_link != null){
+          let nextEl = el_link.nextElementSibling;
+          el_link.classList.remove('show');
+           nextEl.classList.remove('show');
+        }
+        
+
+      })
+    });
+
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+  // end if innerWidth
+}); 
+
+
+
+$(document).ready(function () {
+  // mobile menu
+  openNav = () => {
+      document.getElementById("myNav").style.height = "100%";
   }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
+
+  closeNav = () => {
+      document.getElementById("myNav").style.height = "0%";
+  }
+  $("#pages").click(function () {
+      $("#pages-slid").slideToggle("slow");
+  });
+  $("#article").click(function () {
+      $("#article-slid").slideToggle("slow");
+  });
+  $("#portfolio").click(function () {
+      $("#portfolio-slid").slideToggle("slow");
+  });
+
+
+});
 
 

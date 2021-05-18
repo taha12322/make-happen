@@ -1,8 +1,85 @@
 @import "../colors";
 @import "../mobile-menu";
-@import "../header";
 @import "../footer";
 @import "../slider";
 @import "../copyRight";
-@import "../banner";
 @import "../shaps";
+@import "../askQuestion";
+@import "../testimony";
+@import "../header";
+
+
+//line
+.line {
+    @extend %line;
+}
+
+.rectangle-r{
+    @extend %rectangle;
+}
+// section 2 who are us
+.discription-sec2{
+    line-height: 2rem;
+    text-align: center;
+    font-size: 20px;
+    padding:  0 2rem;
+}
+// our service ui
+.our-service-nav{
+
+    .cart-align{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .cart-items{
+        text-align: center;
+        width: 350px;
+        p{
+            margin-top: 7px;
+            text-align: justify;
+        }
+    }
+    .circle{
+        @extend %circle
+    }
+
+}
+
+.copy_right{
+    @extend %copy_right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 767px) {
+    .discription-sec2{
+        line-height: 1rem;
+        text-align: center;
+        font-size: 10px;
+        padding:  0 1rem;
+    }
+    .discription{
+        display: none;
+    }
+    .header-text{
+        font-size: xx-large;
+    }
+    .nav--card--woks{
+        margin-left: 0.75rem;
+        margin-top: 10px;
+    }
+}
+
+
+
+

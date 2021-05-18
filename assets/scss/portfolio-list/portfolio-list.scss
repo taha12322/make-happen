@@ -5,6 +5,7 @@
 @import "../slider";
 @import "../copyRight";
 @import "../shaps";
+@import "../askQuestion";
 
 
 
@@ -96,59 +97,5 @@
             color           : $white;
             background-color: $yellow;
         }
-    }
-}
-
-
-.box {
-    background-color: $yellow;
-
-    .title {
-        text-align: center;
-    }
-
-    .rectangl {
-        @extend %rectangle-mini-w;
-    }
-
-    input {
-        background-color: $yellow;
-        color           : $white;
-        border          : $white solid 1px;
-        padding         : 0.5rem 1rem;
-        border-radius   : 2px;
-        width           : 75%;
-    }
-
-    input::placeholder {
-        color: $white;
-    }
-
-    textarea {
-        background-color: $yellow;
-        color           : $white;
-        border          : $white solid 1px;
-        padding         : 0.5rem 1rem;
-        border-radius   : 2px;
-    }
-
-    label {
-        font-weight: 700;
-        font-size  : medium;
-    }
-
-    .nav--inputs {
-        padding-left: 17rem;
-    }
-
-    .send-btn {
-        color           : $white;
-        background-color: $black;
-        border-radius   : 1px;
-        padding         : 0.75rem 1.75rem;
-    }
-
-    .send-btn:hover {
-        color: $white;
     }
 }
