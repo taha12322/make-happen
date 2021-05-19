@@ -7,56 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-
-
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.theme.green.min.css">
     <link rel="stylesheet" href="../assets/css/FAQ.css">
-    <title>FAQ...faeze</title>
+    <title>FAQ</title>
 </head>
 
 <body>
-    <!-- The mobile-menu -->
-    <div id="myNav" class="mobile-menu">
+   <!-- The mobile-menu -->
+ <div id="myNav" class="mobile-menu">
 
-        <!-- Button to close the mobile-menu navigation -->
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-        <!-- mobile-menu content -->
-        <div class="mobile-menu-content mx-auto">
-            <a id="" class="item" href="./home.html">HOME</a>
-            <a href="./about-us.html">ABOUT US</a>
-            <p id="portfolio">PORTFOLIO <i class="material-icons">&#xe5c5;</i></p>
-            <div id="portfolio-slid" class="disp-n">
-                <a href="./portfolio-list.html">Portfolio List</a>
-                <a href="./portfolio-detail.html">Portfolio Detail</a>
-            </div>
-            <p id="article">ARTICLE <i class="material-icons">&#xe5c5;</i></p>
-            <div id="article-slid" class="disp-n">
-                <a href="./article-list.html">Article List</a>
-                <a href="./article-details.html">Article Detail</a>
-            </div>
-            <p id="pages">PAGES<i class="material-icons">&#xe5c5;</i></p>
-            <div id="pages-slid" class="disp-n">
-                <a href="./login.html">Login</a>
-                <a href="./sign-up.html">Register </a>
-                <a href="./my-profile.html">My Profile </a>
-                <a href="./pricing.html">Pricing </a>
-                <a href="./FAQ.html">FAQ </a>
-                <a href="./404.html">404 Page </a>
-            </div>
-            <a class="mb-30px" href="./contact-us.html">CONTACT</a>
+    <!-- Button to close the mobile-menu navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+    <!-- mobile-menu content -->
+    <div class="mobile-menu-content mx-auto">
+        <a class="item" href="./home.html">HOME</a>
+        <a href="./about-us.html">ABOUT US</a>
+        <p id="portfolio">PORTFOLIO <i class="material-icons">&#xe5c5;</i></p>
+        <div id="portfolio-slid" class="disp-n">
+            <a href="./portfolio-list.html">Portfolio List</a>
+            <a href="./portfolio-detail.html">Portfolio Detail</a>
         </div>
+        <p id="article">ARTICLE <i class="material-icons">&#xe5c5;</i></p>
+        <div id="article-slid" class="disp-n">
+            <a href="./article-list.html">Article List</a>
+            <a href="./article-details.html">Article Detail</a>
+        </div>
+        <p id="pages">PAGES<i class="material-icons">&#xe5c5;</i></p>
+        <div id="pages-slid" class="disp-n">
+            <a href="./login.html">Login</a>
+            <a href="./sign-up.html">Register </a>
+            <a href="./my-profile.html">My Profile </a>
+            <a href="./pricing.html">Pricing </a>
+            <a href="./FAQ.html">FAQ </a>
+            <a href="./404.html">404 Page </a>
+        </div>
+        <a class="mb-30px" href="#">CONTACT</a>
     </div>
-    <!-- header -->
+  </div>
+    <!-- header desktop -->
     <header class="header d-flex align-items-center">
         <nav class="container  d-flex align-items-center justify-content-between">
             <div class="logo">
@@ -64,47 +62,64 @@
             </div>
             <div class="menu d-flex justify-content-between align-items-center ">
                 <div class="item  d-md-none">
-                    <a class="item-link bars" onclick="openNav()"> <img src=" ../assets/img/bars.png" alt=""></a>
-                </div>
-                <div class=" item m-3 d-none d-md-inline">
-                    <a href="./home.html" class="item-link" href="#">home</a>
+                    <a class="bars" onclick="openNav()"> <img src=" ../assets/img/bars.png" alt=""></a>
                 </div>
                 <div class="item m-3 d-none d-md-inline">
-                    <a href="./about-us.html" class="item-link" href="#">about us</a>
-                </div>
-                <div class="item m-3 d-none d-md-inline dropdown">
-                    <a class="item-link dropdown-toggle" data-toggle="dropdown" href="">portfolio
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="./portfolio-list.html">Portfolio List</a>
-                        <a class="dropdown-item" href="./portfolio-detail.html">Portfolio Detail</a>
-                    </div>
-
-                </div>
-                <div class="item m-3 d-none d-md-inline dropdown">
-                    <a class="item-link dropdown-toggle" data-toggle="dropdown" href="">article </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="./article-list.html">Article List</a>
-                        <a class="dropdown-item" href="./article-details.html">Article Detail</a>
-                    </div>
+                    <a href="./home.html">home</a>
                 </div>
                 <div class="item m-3 d-none d-md-inline">
-                    <a class="item-link dropdown-toggle" data-toggle="dropdown" href="">pages </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="./login.html">Login</a>
-                        <a class="dropdown-item" href="./sign-up.html">Register </a>
-                        <a class="dropdown-item" href="./my-profile.html">My Profile </a>
-                        <a class="dropdown-item" href="./pricing.html">Pricing </a>
-                        <a class="dropdown-item" href="./FAQ.html">FAQ </a>
-                        <a class="dropdown-item" href="./404.html">404 Page </a>
-                    </div>
+                    <a href="./about-us.html" target="_blank">about us</a>
+                </div>
+                <div class="navbar navbar-expand">
+                  <div class="collapse navbar-collapse" id="main_nav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle  d-none d-lg-inline" href="#" data-bs-toggle="dropdown"> Portfolio</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./portfolio-list.html"> portfolio list </a></li>
+                        <li><a class="dropdown-item" href="./portfolio-detail.html"> portfolio detail </a></li>
+                        </ul>
+                    </li>
+                  </ul>
+                  </div>
+                </div>
+                <div class="navbar navbar-expand">
+                  <div class="collapse navbar-collapse" id="main_nav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle  d-none d-lg-inline" href="#" data-bs-toggle="dropdown"> article</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./article-list.html"> article list </a></li>
+                        <li><a class="dropdown-item" href="./article-details.html"> article detail </a></li>
+                        </ul>
+                    </li>
+                  </ul>
+                  </div>
+                </div>
+                <div class="navbar navbar-expand">
+                  <div class="collapse navbar-collapse" id="main_nav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle  d-none d-lg-inline" href="#" data-bs-toggle="dropdown"> pages</a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./login.html"> login </a></li>
+                        <li><a class="dropdown-item" href="./sign-up.html"> Register </a></li>
+                        <li><a class="dropdown-item" href="./my-profile.html"> my profile </a></li>
+                        <li><a class="dropdown-item" href="./pricing.html"> pricing </a></li>
+                        <li><a class="dropdown-item" href="./FAQ.html"> faq </a></li>
+                        <li><a class="dropdown-item" href="./404.html"> 404 page </a></li>
+                        </ul>
+                    </li>
+                  </ul>
+                  </div>
                 </div>
                 <div class="item m-3 d-none d-md-inline">
-                    <a class="item-link" href="./contact-us.html">contact</a>
+                    <a href="#">contact</a>
                 </div>
             </div>
         </nav>
     </header>
+  
     <!-- banner  -->
     <div class="banner-container   ">
         <div class="banner-text">
@@ -283,12 +298,18 @@
     <div class="copy_right d-flex align-items-center justify-content-center">
         <p>2018 Makaraya . All rights reserved .</p>
     </div>
+
+    <!-- commen script -->
     <script src="../assets/js/jquery-3.6.0.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- carousel and slider bootstrap ui -->
     <script src="../assets/js/owl.carousel.min.js"></script>
+    <!-- mobile/desktop header hambergery commen   -->
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/owl-carousel.js"></script>
+  <script src="../assets/js/main-script.js"></script>
     <script src="../assets/js/FAQ.js"></script>
-    <script src="../assets/js/main-script.js"></script>
 </body>
 
 </html>

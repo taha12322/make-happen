@@ -1,6 +1,10 @@
 @import "../colors";
-@import "../header";
+@import "../mobile-menu";
 @import "../footer";
+@import "../slider";
+@import "../copyRight";
+@import "../shaps";
+@import "../header";
 body {
     margin: 0;
     padding: 0;
@@ -105,4 +109,8 @@ body {
         width: 30px;
         margin-right: 10px;
     }
+}
+
+.copy_right{
+    @extend %copy_right;
 }

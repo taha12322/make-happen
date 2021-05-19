@@ -1,11 +1,12 @@
 @import "../colors";
 @import "../mobile-menu";
-@import "../header";
 @import "../footer";
 @import "../slider";
 @import "../copyRight";
 @import "../shaps";
 @import "../askQuestion";
+@import "../testimony";
+@import "../header";
 
 
 
@@ -98,4 +99,9 @@
             background-color: $yellow;
         }
     }
+}
+
+
+.copy_right{
+    @extend %copy_right;
 }

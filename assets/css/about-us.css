@@ -1,56 +1,75 @@
-.header {
-  background-color: #000;
+.mobile-menu {
+  height: 0%;
   width: 100%;
-  height: 70px;
-}
-
-.header nav .menu .item .item-link {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.header nav .menu .item .item-link:hover {
-  padding-bottom: 21px;
-  border-bottom: #ffb51f solid 4px;
-  border-radius: 3px;
-}
-
-.header nav .menu .item .bars:hover {
-  border-bottom: transparent solid 4px;
-}
-
-a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ffb51f;
-}
-
-.dropdown-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
   background-color: black;
-  padding: 0;
+  overflow-y: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.dropdown-menu .dropdown-item {
-  background-color: black;
-  color: white;
-  padding: 10px 0 10px 25px;
+.mobile-menu-content {
+  position: relative;
+  top: 10%;
+  width: 50%;
+  text-align: center;
+  margin-top: 20px;
 }
 
-.dropdown-menu .dropdown-item:hover {
-  color: #ffb51f;
-  background-color: #1a1b1d !important;
+.mobile-menu a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.dropdown-menu .dropdown-item:focus {
-  background-color: #1a1b1d !important;
+.mobile-menu p {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 0 !important;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
-  .header {
-    height: 100px;
+.mobile-menu .disp-n {
+  display: none;
+}
+
+.mobile-menu a:hover,
+.mobile-menu a:focus,
+.mobile-menu p:hover,
+.mobile-menu p:focus {
+  color: #f1f1f1;
+}
+
+.mobile-menu .closebtn {
+  position: absolute;
+  top: -20px;
+  right: 15px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .mobile-menu {
+    overflow-y: auto;
+  }
+  .mobile-menu a {
+    font-size: 15px;
+  }
+  .mobile-menu .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
 
@@ -67,6 +86,10 @@ ul {
 
 .footer-items {
   list-style: none;
+}
+
+.footer-items a:hover {
+  color: #ffb51f;
 }
 
 footer li {
@@ -90,6 +113,78 @@ footer li {
   color: #818a91;
 }
 
+/* slider -------------------------------------------- */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #ffb51f;
+  font-weight: bolder;
+  font-size: 25px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #ffb51f;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.text {
+  color: #000;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 45%;
+  width: 100%;
+  text-align: center;
+}
+
+.header-text {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.discription {
+  font-size: 20px;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
 .join-nav .rectangle {
   width: 5%;
   height: 5px;
@@ -102,6 +197,62 @@ footer li {
 @media screen and (max-width: 767px) {
   .join-nav .rectangle {
     width: 15%;
+  }
+}
+
+.header {
+  background-color: #000;
+  width: 100%;
+  height: 70px;
+}
+
+.header nav .menu .item .item-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header nav .menu .item .item-link:hover {
+  padding-bottom: 21px;
+  border-bottom: #ffb51f solid 4px;
+  border-radius: 3px;
+}
+
+.header nav .menu .item .bars:hover {
+  border-bottom: transparent solid 4px;
+}
+
+.header a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.header a:hover {
+  color: #ffb51f !important;
+}
+
+.dropdown-menu {
+  background-color: black !important;
+  padding: 0;
+}
+
+.dropdown-menu .dropdown-item {
+  background-color: black;
+  color: white;
+  padding: 10px 0 10px 25px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: #ffb51f;
+  background-color: #1a1b1d !important;
+}
+
+.dropdown-menu .dropdown-item:focus {
+  background-color: #1a1b1d !important;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: 100px;
   }
 }
 

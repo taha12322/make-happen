@@ -1,6 +1,11 @@
 @import "../colors";
-@import "../header";
+@import "../mobile-menu";
 @import "../footer";
+@import "../slider";
+@import "../copyRight";
+@import "../shaps";
+@import "../header";
+
 body {
     margin: 0;
     padding: 0;
@@ -88,4 +93,8 @@ body {
         background: $yellow;
         border: none;
     }
+}
+
+.copy_right{
+    @extend %copy_right;
 }

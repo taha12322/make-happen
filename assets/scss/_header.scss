@@ -35,26 +35,26 @@
         }
 
     }
+    a{
+        color: $white !important;
+        text-decoration: none !important;
+    }
+    
+    a:hover{
+        color: $yellow !important;
+    }
 
 }
 
-a{
-    color: $white;
-    text-decoration: none;
-}
 
-a:hover{
-    color: $yellow;
-}
 
 
 .dropdown-menu {
-    background-color: black;
-    padding         : 0;
-
+    background-color: black !important;
+    padding: 0;
 
     .dropdown-item {
-        background-color: black;
+        background-color: black ;
         color           : white;
         padding         : 10px 0 10px 25px;
 
@@ -67,9 +67,6 @@ a:hover{
 
             background-color: #1a1b1d !important;
         }
-
-
-
     }
 }
 

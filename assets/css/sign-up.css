@@ -19,17 +19,17 @@
   border-bottom: transparent solid 4px;
 }
 
-a {
-  color: #ffffff;
-  text-decoration: none;
+.header a {
+  color: #ffffff !important;
+  text-decoration: none !important;
 }
 
-a:hover {
-  color: #ffb51f;
+.header a:hover {
+  color: #ffb51f !important;
 }
 
 .dropdown-menu {
-  background-color: black;
+  background-color: black !important;
   padding: 0;
 }
 

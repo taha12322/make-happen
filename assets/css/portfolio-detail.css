@@ -94,17 +94,17 @@
   border-bottom: transparent solid 4px;
 }
 
-a {
-  color: #ffffff;
-  text-decoration: none;
+.header a {
+  color: #ffffff !important;
+  text-decoration: none !important;
 }
 
-a:hover {
-  color: #ffb51f;
+.header a:hover {
+  color: #ffb51f !important;
 }
 
 .dropdown-menu {
-  background-color: black;
+  background-color: black !important;
   padding: 0;
 }
 
@@ -142,6 +142,10 @@ ul {
 
 .footer-items {
   list-style: none;
+}
+
+.footer-items a:hover {
+  color: #ffb51f;
 }
 
 footer li {
@@ -267,7 +271,7 @@ footer li {
 }
 
 .banner-container {
-  background-image: url(../img/homepage/kaizen-nguy-n-4.png);
+  background-image: url(../img/portfolioDetail/bgPorDetail.png);
 }
 
 .pr-1 {
