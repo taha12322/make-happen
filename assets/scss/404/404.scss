@@ -54,7 +54,7 @@ body {
     }
 }
 
-.home-btn {
+.btn--home{
     width           : 160px;
     height          : 56px;
     color           : $white;
@@ -62,6 +62,10 @@ body {
     font-weight     : 600;
     font-size       : 20px;
     border-radius   : 2px;
+    padding: 1rem 2rem;
+}
+.btn--home:hover{
+    color: $black;
 }
 
 

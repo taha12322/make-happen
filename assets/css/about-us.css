@@ -99,6 +99,12 @@ footer li {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 767px) {
+  .join-nav .rectangle {
+    width: 15%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -253,8 +253,18 @@ footer li {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 767px) {
+  .box .rectangl {
+    width: 15%;
+  }
+}
+
 .box {
   background-color: #ffb51f;
+}
+
+.box .nav--inputs {
+  padding-left: 0;
 }
 
 .box .title {
@@ -267,7 +277,7 @@ footer li {
   border: #ffffff solid 1px;
   padding: 0.5rem 1rem;
   border-radius: 2px;
-  width: 75%;
+  width: 100%;
 }
 
 .box input::-webkit-input-placeholder {
@@ -292,15 +302,12 @@ footer li {
   border: #ffffff solid 1px;
   padding: 0.5rem 1rem;
   border-radius: 2px;
+  width: 100%;
 }
 
 .box label {
   font-weight: 700;
   font-size: medium;
-}
-
-.box .nav--inputs {
-  padding-left: 17rem;
 }
 
 .box .send-btn {
@@ -312,6 +319,18 @@ footer li {
 
 .box .send-btn:hover {
   color: #ffffff;
+}
+
+@media screen and (min-width: 1024px) {
+  .inputs {
+    width: 70% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box .nav--inputs {
+    padding: 0;
+  }
 }
 
 .banner-container {

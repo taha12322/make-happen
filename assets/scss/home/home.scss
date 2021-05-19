@@ -34,7 +34,7 @@
     }
     .cart-items{
         text-align: center;
-        width: 350px;
+        padding: 0 1rem;
         p{
             margin-top: 7px;
             text-align: justify;
@@ -58,10 +58,7 @@
 
 
 
-
-
-
-@media screen and (max-width : 767px) {
+@media screen and (max-width : 768px) {
     .discription-sec2{
         line-height: 1rem;
         text-align: center;

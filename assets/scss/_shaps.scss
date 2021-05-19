@@ -46,6 +46,12 @@
     margin-bottom   : 40px;
 }
 
+@media screen and (max-width : 767px) {
+    %rectangle-mini-w {
+        width           : 15%;
+    }
+}
+
 %circle{
     background-color: #000;
     width: 75px;
